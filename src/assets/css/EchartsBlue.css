@@ -1,0 +1,11 @@
+>>>.tooltipBGColor{
+    background-image: linear-gradient(to right, rgba(62, 130, 196, .9), rgba(62, 130, 196, .4));
+}
+>>>.tooltipBGColor_ALL{
+    height:calc(84% - 30px);
+    width:80px;
+    background-image:repeating-linear-gradient(90deg,rgba(62, 130, 196, .9),rgba(62, 130, 196, .4) 30%,rgba(62, 130, 196, 0));
+    top:16% !important;
+    font-size: 10px !important;
+    border-left:2px solid #bbeee7 !important;
+  }

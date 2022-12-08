@@ -1,0 +1,265 @@
+.earth-text-container,
+.earthquake-pulse{
+	z-index: 10 !important;
+}
+
+.earth-text-container.eq-text {
+	width: 200px !important;
+	height: 200px !important;
+	border: 1px solid crimson !important;
+}
+
+.eq-text > p {
+	color: red;
+}
+
+.range-center {
+	z-index: 10 !important;
+}
+
+.earth-icon-container {
+	z-index: 85 !important;
+}
+
+.earth-marker {
+	display: inline-block;
+	width: 25px;
+	height: 50px;
+	z-index: 45 !important;
+}
+
+.range-marker {
+	display: inline-block;
+	width: 20px;
+	height: 30px;
+}
+
+.video-marker {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.video-marker.video-player {
+	background: url("../img/station/btn_sp.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.video-marker.video-player-line {
+	background: url("../img/station/lineCam.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.earth-marker.xs-marker {
+	background: url(../img/earthquake/图标1.png)no-repeat;
+	background-size: 100% 100%;
+
+}
+
+.earth-marker.fs-marker {
+	background: url(../img/earthquake/图标2.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.earth-marker.start-light {
+	background: url(../img/earthquake/start-light.png)no-repeat;
+	background-size: 100% 100%;
+
+}
+
+.earth-marker.end-light {
+	background: url(../img/earthquake/end-light.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.range-marker.range-center {
+	background: url(../img/earthquake/range-center.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.earth-marker.breathe {
+	animation: pointSelectedAnimate 1.5s;
+	z-index: 9999;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pointSelectedAnimate {
+	from {
+		display: 0.4;
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.5);
+	}
+	to {
+		opacity: 0.4
+	}
+}
+
+/* 地震源输入切换按钮 */
+.earthquake-toolbar-btn {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	width: 70px;
+	height: 70px;
+	padding-top: 55px;
+	background: url(../img/earthquake/地震源输入.png)no-repeat;
+	background-position: 10px 0;
+	background-size: 50px 50px;
+	opacity: .8;
+	z-index: 410;
+}
+
+.earthquake-toolbar-btn:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.earthquake-upload-toolbar-btn {
+	position: absolute;
+	left: 100px;
+	bottom: 20px;
+	width: 70px;
+	height: 70px;
+	padding-top: 55px;
+	background: url(../img/earthquake/选择范围.png)no-repeat;
+	background-position: 10px 0;
+	background-size: 50px 50px;
+	opacity: .8;
+	z-index: 410;
+}
+
+.earthquake-upload-toolbar-btn:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+/* 地震源输入容器 */
+.earthquake-toolbar {
+	position: absolute;
+	bottom: -70px;
+	right: 520px;
+	width: 1000px;
+	height: 60px;
+	background: url(../img/1.png)no-repeat;
+	z-index: 410;
+	padding-top: 15px;
+	padding-left: 40px;
+	transition: bottom .3s;
+}
+
+.earthquake-toolbar.show {
+	bottom: 0px;
+}
+
+.earthquake-search-item {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 20px;
+}
+
+/* 地震光圈动画 */
+.earthquake-pulse {
+	border-radius: 100%;
+	box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0);
+}
+
+.earthquake-pulse::after {
+	content: "";
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -50%;
+	margin-top: -50%;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+
+	box-shadow: 0 0 50px #aa0000;
+	animation: pulsate_earthquake 1.4s ease-in-out;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+}
+
+@keyframes pulsate_earthquake {
+	0% {
+		transform: scale(0.1, 0.1);
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0,1)";
+		filter: alpha(opacity=0.1);
+	}
+
+	50% {
+		opacity: 1;
+		-ms-filter: none;
+		filter: none;
+	}
+
+	100% {
+		transform: scale(1, 1);
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+	}
+}
+
+/* 地震影响区段 */
+.earthquake-effect-line {
+	position: absolute;
+	bottom: -120px;
+	right: 435px;
+	left: 150px;
+	height: 120px;
+	z-index: 410;
+	padding: 5px 50px;
+	transition: bottom .3s;
+}
+
+.earthquake-effect-line::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 36px;
+	background: url(../img/1.png)no-repeat;
+	background-size: 100% auto;
+	z-index: -1;
+}
+
+.earthquake-effect-line::after {
+	content: "";
+	position: absolute;
+	top: 36px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 150%;
+	background: url(../img/1.png)repeat-y 0 -80px;
+	background-size: 100% 100%;
+	z-index: -1;
+}
+
+.earthquake-effect-line.show {
+	bottom: 0px;
+}
+
+.earthquake-effect-line .tit {
+	padding-left: 10px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.eq-center {
+	background: url("../components/EarthquakeView/imgs/EqCenter.png") no-repeat;
+	width: 83px !important;
+	height: 40px !important;
+	background-size: 100% 100%;
+}
+
+

@@ -1,0 +1,546 @@
+.gongwu-icon-container {
+	z-index: 50 !important;
+}
+
+/* marker图标 */
+.gongwu-marker {
+	display: inline-block;
+	width: 30px !important;
+	height: 30px !important;
+}
+
+.gongwu-marker-light {
+	display: inline-block;
+	width: 20px;
+	height: 22.7px;
+}
+
+.gongwu-marker-light-ga {
+	display: inline-block;
+	width: 7px;
+	height: 8px;
+}
+ 
+.gongwu-marker.sb_dk {
+	background: url(../img/gongWu/道口.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light.sb_dk_light {
+	background: url(../img/gongWu/dk_light.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light-ga.sb_dk_light_ga {
+	background: url(../img/gongWu/dk_light.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker.sb_zyc {
+	background: url(../img/gongWu/防洪供电抢修作业车.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light.sb_zyc_light {
+	background: url(../img/gongWu/防洪供电抢修作业车.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light-ga.sb_zyc_light_ga {
+	background: url(../img/gongWu/防洪供电抢修作业车.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker.sb_qx {
+	background: url(../img/gongWu/防洪抢险材料及机具.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light.sb_qx_light {
+	background: url(../img/gongWu/qx_light.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light-ga.sb_qx_light_ga {
+	background: url(../img/gongWu/qx_light.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker.sb_ksd1 {
+	background: url(../img/gongWu/防洪看守点1级.png)no-repeat;
+	background-size: 100% 100%;
+	height: 30px !important;
+	width: 30px !important;
+}
+
+.gongwu-marker-light.sb_ksd1_light {
+	background: url(../img/gongWu/ksd1_light.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light-ga.sb_ksd1_light_ga {
+	background: url(../img/gongWu/ksd1_light.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker.sb_ksd2 {
+	background: url(../img/gongWu/防洪看守点2级.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light.sb_ksd2_light {
+	background: url(../img/gongWu/ksd2_light.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light-ga.sb_ksd2_light_ga {
+	background: url(../img/gongWu/ksd2_light.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker.sb_ksd3 {
+	background: url(../img/gongWu/防洪看守点3级.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light.sb_ksd3_light {
+	background: url(../img/gongWu/ksd3_light.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light-ga.sb_ksd3_light_ga {
+	background: url(../img/gongWu/ksd3_light.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker.jh_sg {
+	background: url(../img/gongWu/施工计划.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light.jh_sg_light {
+	background: url(../img/gongWu/sgMarkerLight.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker.jh_wx {
+	background: url(../img/gongWu/维修计划.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light.jh_wx_light {
+	background: url(../img/gongWu/wxMarkerLight.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker.jh_jg {
+	background: url(../img/gongWu/监管计划.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light.jh_jg_light {
+	background: url(../img/gongWu/jgMarkerLight.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker.sb_gdc {
+	/*background: url(../img/gongWu/轨道车.png)no-repeat;*/
+	background: url(../img/gongWu/gdc_light.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker-light.sb_gdc_light {
+	background: url(../img/gongWu/gdc_light.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongwu-marker.sb_gdcdw {
+	display: inherit;
+	margin-top: -32px;
+	margin-left: -6px;
+	width: 120px!important;
+	height: 50px!important;
+	padding-left: 40px;
+	padding-top: 1px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	background: url(../img/gongWu/轨道车定位1.png)no-repeat;
+	background-size: 100% 100%;
+}
+.gongwu-marker.sb_gdcdw.is-old {
+	background: url(../img/gongWu/轨道车定位历史.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+/* popper窗体 */
+.marker-gongwu-info {
+	border-collapse: collapse;
+	font-size: 14px;
+	padding-top: 20px;
+}
+
+.marker-gongwu-info>table{
+	width: 100%;
+}
+.marker-gongwu-info .blue {
+	color: #68A2FA;
+}
+.marker-gongwu-info .orange {
+	color: #FDA629;
+}
+.marker-gongwu-info .red {
+	color: #EF5659;
+}
+
+.marker-gongwu-info .line-h{
+	border-left:1px solid #131C36;
+}
+.marker-gongwu-info .line-v{
+	border-top:1px solid #131C36;
+}
+.marker-gongwu-info .tab {
+	width: 100%;
+	padding-top:10px;
+	padding-left: 10px;
+	border-bottom: 2px solid #2568ED;
+}
+
+.marker-gongwu-info .tab>span {
+	display: inline-block;
+	padding: 3px 15px 0px 15px;
+	color: #7A8CD8;
+}
+.marker-gongwu-info .tab>span.active{
+	background: #2568ED;
+	color: white;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.marker-gongwu-info .tab.orange{
+	border-bottom-color: #edce30;
+}
+.marker-gongwu-info .tab.orange>span{
+	
+}
+.marker-gongwu-info .tab.orange>span.active{
+	background: #edce30;
+}
+
+.marker-gongwu-info .tit{
+	text-align: center;
+	width: 130px;
+	font-size: 16px;
+	letter-spacing: 2px;
+	padding-bottom: 10px;
+}
+.marker-gongwu-info .tit2{
+	text-align: center;
+	width: 130px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.marker-gongwu-info .sub-tit{
+	width: 100px;
+	text-align: center;
+}
+
+.marker-gongwu-info .detail-item{
+	width: 100%;
+	padding: 5px 8px;
+	display: none;
+}
+.marker-gongwu-info .detail-item.show{
+	display: block;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #131C36;
+}
+
+.marker-gongwu-info .list-item {
+	padding:3px;
+
+}
+
+.marker-gongwu-info .list-item>span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 70px;
+	padding-right: 5px;
+	text-align: right;
+}
+.marker-gongwu-info .list-item.auto {
+	/*display: inline-block;*/
+	vertical-align: middle;
+	width: 100%;
+}
+.marker-gongwu-info .list-item.two_rows {
+	display: inline-block;
+	vertical-align: middle;
+	width: 49%;
+}
+.marker-gongwu-info .list-item.auto.inline{
+	width: 100%;
+}
+.marker-gongwu-info .list-item.auto>span {
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+	padding-right: 5px;
+}
+
+.marker-gongwu-info .select-item{
+	padding: 3px;
+	background: transparent;
+	color: #bec6da;
+	border: none;
+	outline: none;
+}
+.marker-gongwu-info .select-item>option{
+	background-color: #283D70;
+}
+
+.marker-gongwu-info .detail-table{
+	width: 100%;
+	text-align: center;
+}
+.marker-gongwu-info .detail-table th{
+	color: #68A2FA;
+	padding: 2px;
+}
+.marker-gongwu-info .detail-table td{
+	font-size: 12px;
+	border-bottom: 1px solid #4D5670;
+	padding:4px 2px;
+}
+.marker-gongwu-info>table{
+	width: 100%;
+}
+
+
+
+/* popper指示箭头 */
+.marker-gongwu-info-tip {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 2px;
+	height: 60px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background: #A08134;
+}
+
+.marker-gongwu-info-tip::before {
+	content: "";
+	position: absolute;
+	top: 22px;
+	left: -12px;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-left-width: 0;
+	border-right-color: #A08134;
+	border-width: 6px;
+}
+
+/* 桥梁 */
+.marker-gongwu-info-tip.ql{
+	background: #4582ff;
+}
+.marker-gongwu-info-tip.ql::before{
+	border-right-color: #4582ff;
+}
+/* 隧道 */
+.marker-gongwu-info-tip.sd{
+	background: #3ddf49;
+}
+.marker-gongwu-info-tip.sd::before{
+	border-right-color: #3ddf49;
+}
+/* 坡道 */
+.marker-gongwu-info-tip.pd{
+	background: #ff692e;
+}
+.marker-gongwu-info-tip.pd::before{
+	border-right-color: #ff692e;
+}
+
+.marker-gongwu-info-tip.jk{
+	background: #c21919;
+}
+.marker-gongwu-info-tip.jk::before{
+	border-right-color: #c21919;
+}
+
+/*道口*/
+.marker-gongwu-info-tip.dk{
+	background: #04DBD7;
+}
+.marker-gongwu-info-tip.dk::before{
+	border-right-color: #04DBD7;
+}
+/* 防洪看守点 */
+.marker-gongwu-info-tip.ksd{
+	background: #D1CF0D;
+}
+.marker-gongwu-info-tip.ksd::before{
+	border-right-color: #D1CF0D;
+}
+
+/*防洪作业车*/
+.marker-gongwu-info-tip.ksd{
+	background: #E6C63B;
+}
+.marker-gongwu-info-tip.ksd::before{
+	border-right-color: #E6C63B;
+}
+
+/*工务轨道车*/
+.marker-gongwu-info-tip.gdc{
+	background: #E6C63B;
+}
+.marker-gongwu-info-tip.gdc::before{
+	border-right-color: #E6C63B;
+}
+
+/*防洪抢险备料*/
+.marker-gongwu-info-tip.qx{
+	background: #FF9F00;
+}
+.marker-gongwu-info-tip.qx::before{
+	border-right-color: #FF9F00;
+}
+
+.marker-gongwu-info-tip.sg{
+	background: #F9B82D;
+}
+.marker-gongwu-info-tip.sg::before{
+	border-right-color: #F9B82D;
+}
+
+.marker-gongwu-info-tip.wx{
+	background: #F9B82D;
+}
+.marker-gongwu-info-tip.wx::before{
+	border-right-color: #F9B82D;
+}
+
+.marker-gongwu-info-tip.jg{
+	background: #F9B82D;
+}
+.marker-gongwu-info-tip.jg::before{
+	border-right-color: #F9B82D;
+}
+
+/* popper内部logo */
+.marker-gongwu-info .log.ql {
+	display: inline-block;
+	width: 100px;
+	height: 60px;
+	background: url(../img/filters/桥梁.png)no-repeat;
+	background-position: center 10px;
+	background-size: 60px 40px;
+}
+
+.marker-gongwu-info .log.sd {
+	display: inline-block;
+	width: 100px;
+	height: 60px;
+	background: url(../img/filters/隧道.png)no-repeat;
+	background-position: center 0px;
+	background-size: 60px 60px;
+}
+
+.marker-gongwu-info .log.dk {
+	display: inline-block;
+	width: 100px;
+	height: 60px;
+	background: url(../img/gongWu/道口-大.png)no-repeat;
+	background-position: center 0px;
+	background-size: 60px 60px;
+}
+
+/*.marker-gongwu-info .log.jk {*/
+/*	display: inline-block;*/
+/*	width: 100px;*/
+/*	height: 60px;*/
+/*	background: url(../img/gongWu/道口-大.png)no-repeat;*/
+/*	background-position: center 0px;*/
+/*	background-size: 60px 60px;*/
+/*}*/
+
+.marker-gongwu-info .log.ksd {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/gongWu/防洪看守点-大.png)no-repeat;
+	background-position: center 0px;
+	background-size: 60px 60px;
+}
+
+.marker-gongwu-info .log.zyc {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/gongWu/防洪供电抢修作业车-轨道车-大.png)no-repeat;
+	background-position: center 0px;
+	background-size: 60px 60px;
+}
+
+.marker-gongwu-info .log.gdc {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/gongWu/防洪供电抢修作业车-轨道车-大.png)no-repeat;
+	background-position: center 0px;
+	background-size: 60px 60px;
+}
+.marker-gongwu-info .log.gdcdw {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/gongWu/轨道车定位-大.png)no-repeat;
+	background-position: center 0px;
+	background-size: 70px 60px;
+}
+
+.marker-gongwu-info .log.qx {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/gongWu/防洪抢险材料及机具-大.png)no-repeat;
+	background-position: center 0px;
+	background-size: 60px 60px;
+}
+
+.marker-gongwu-info .log.sg {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/gongWu/施工计划-大.png)no-repeat;
+	background-position: center 0px;
+	background-size: 60px 60px;
+}
+
+.marker-gongwu-info .log.wx {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/gongWu/维修计划-大.png)no-repeat;
+	background-position: center 0px;
+	background-size: 60px 60px;
+}
+
+.marker-gongwu-info .log.jg {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/gongWu/监管计划-大.png)no-repeat;
+	background-position: center 0px;
+	background-size: 60px 60px;
+}

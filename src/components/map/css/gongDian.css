@@ -1,0 +1,302 @@
+.gongdian-icon-container {
+	z-index: 25 !important;
+}
+
+.gongdian-marker {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.gongdian-marker-light {
+	display: inline-block;
+	width: 20px;
+	height: 22.7px;
+}
+
+.gongdian-marker.bds {
+	background: url(../img/gongDian/变电所-地图图标.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongdian-marker-light.bds-light {
+	background: url('../img/gongDian/light/marker_bds.png')no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongdian-marker.gdb {
+	background: url(../img/gongDian/供电臂-地图图标.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongdian-marker-light.gdb-light {
+	background: url('../img/gongDian/light/marker_gdb.png')no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongdian-marker.gqfw {
+	background: url(../img/gongDian/供电工区-地图图标.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongdian-marker.dfx {
+	background: url(../img/gongDian/电分相.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongdian-marker-light.dfx-light {
+	background: url('../img/gongDian/light/marker_dfx.png')no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongdian-marker.yjdy {
+	background: url(../img/gongDian/应急电源-地图.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongdian-marker-light.yjdy-light {
+	background: url('../img/gongDian/light/marker_yjdy.png')no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongdian-marker.yjc {
+	/* width: 90px;
+	height: 25px; */
+	/*background: url(../img/gongDian/应急车2.png)no-repeat;*/
+	background: url('../img/gongDian/组 453.png')no-repeat;
+	background-size: 100% 100%;
+	width: 30px !important;
+	height: 36px !important;
+}
+
+.gongdian-marker-light.yjc-light {
+	background: url('../img/gongDian/light/marker_gd_gdc.png')no-repeat;
+	background-size: 100% 100%;
+}
+
+.marker-gongdian-info-popup {
+	background: rgba(42, 61, 109, .8);
+	color: white;
+}
+
+.gongdian-marker-jcwsb {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+}
+.gongdian-marker-jcwsb.gz {
+	background: url("../img/gongDian/钢柱.png")no-repeat;
+	background-size: 100% 100%;
+}
+.gongdian-marker-jcwsb.hntz {
+	background: url("../img/gongDian/混凝土柱.png")no-repeat;
+	background-size: 100% 100%;
+}
+.gongdian-marker-jcwsb.fjymdgj {
+	background: url("../img/gongDian/非绝缘锚段关节.png")no-repeat;
+	background-size: 100% 100%;
+}
+.gongdian-marker-jcwsb.jymdgj {
+	background: url("../img/gongDian/绝缘锚段关节.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongdian-marker-jcwsb.fdjyq {
+	background: url("../img/gongDian/分段绝缘器.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongdian-marker-jcwsb.fxjyq {
+	background: url("../img/gongDian/分相绝缘器.png")no-repeat;
+	background-size: 100% 100%;
+}
+.gongdian-marker-jcwsb.fxjyq1 {
+	background: url("../img/gongDian/gdb1.png")no-repeat;
+	background-size: 100% 100%;
+	height: 30px;
+	width: 30px;
+}
+.gongdian-marker-jcwsb.fxjyq2 {
+	background: url("../img/gongDian/gdb2.png")no-repeat;
+	background-size: 100% 100%;
+	height: 30px;
+	width: 30px;
+}
+.gongdian-marker-jcwsb.gddlj {
+	background: url("../img/gongDian/股道电连接.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongdian-marker-jcwsb.ckkg {
+	background: url("../img/gongDian/常开开关.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongdian-marker-jcwsb.cbkg {
+	background: url("../img/gongDian/常闭开关.png")no-repeat;
+	background-size: 100% 100%;
+}
+.gongdian-marker-jcwsb.blq {
+	background: url("../img/gongDian/避雷器.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.gongdian-marker-jcwsb.xsxwz {
+	background: url("../img/gongDian/吸上线位置.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.marker-gongdian-info .list-item.auto>span {
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+	padding-right: 5px;
+}
+.marker-gongdian-info .list-item.inline{
+	display: inline-block;
+	width: 49%;
+}
+
+.marker-gongdian-info-tip {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 2px;
+	height: 60px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background: #FFFE04;
+}
+
+.marker-gongdian-info-tip::before {
+	content: "";
+	position: absolute;
+	top: 22px;
+	left: -12px;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-left-width: 0;
+	border-right-color: #FFFE04;
+	border-width: 6px;
+}
+.marker-gongdian-info-tip.bds {
+	background: #8e58ca;
+}
+.marker-gongdian-info-tip.bds::before {
+	border-right-color: #8e58ca;
+}
+.marker-gongdian-info-tip.gdb {
+	background: #55ffff;
+}
+.marker-gongdian-info-tip.gdb::before {
+	border-right-color: #55ffff;
+}
+.marker-gongdian-info-tip.gqfw {
+	background: #ff9f00;
+}
+.marker-gongdian-info-tip.gqfw::before {
+	border-right-color: #ff9f00;
+}
+.marker-gongdian-info-tip.yjdy {
+	background: #FA6F55;
+}
+.marker-gongdian-info-tip.yjdy::before {
+	border-right-color: #FA6F55;
+}
+
+.marker-gongdian-info {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 15px 0 10px 20px;
+	font-size: 14px;
+}
+
+.marker-gongdian-info>.top {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #131C36;
+}
+
+.marker-gongdian-info>.top>.pic {
+	display: inline-block;
+	vertical-align: top;
+	width: 80px;
+	height: 80px;
+	padding-top: 65px;
+	white-space: nowrap;
+}
+.marker-gongdian-info>.top>.pic.bds{
+	background: url(../img/gongDian/变电所-win.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+.marker-gongdian-info>.top>.pic.gdb{
+	background: url(../img/gongDian/供电-win.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+.marker-gongdian-info>.top>.pic.gqfw{
+	background: url(../img/gongDian/工区-win.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+.marker-gongdian-info>.top>.pic.dfx{
+	background: url(../img/gongDian/电分相-win.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+.marker-gongdian-info>.top>.pic.yjdy{
+	background: url(../img/gongDian/应急电源-win.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+.marker-gongdian-info>.top>.pic.yjc{
+	background: url(../img/gongDian/应急车3.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+.marker-gongdian-info>.top>.tit {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.marker-gongdian-info>.top>.tit>h3 {
+	margin: 0;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+
+.marker-gongdian-info>.top>.tit>h4 {
+	margin: 10px 0;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+
+.marker-gongdian-info>.list-item {
+	padding: 1px 0;
+}
+
+.marker-gongdian-info>.list-item>span {
+	display: inline-block;
+	vertical-align: middle;
+	/* width: 90px; */
+	padding-right: 10px;
+	text-align: right;
+}
+
+.marker-gongdian-info>.list-item>.blue {
+	color: #68A2FA;
+}
+
+.marker-gongdian-info>.list-item>.orange {
+	color: #FDA629;
+}
+
+.marker-gongdian-info>.list-item>.red {
+	color: #EF5659;
+}

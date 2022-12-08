@@ -1,0 +1,256 @@
+.jiwu-icon-container {
+	z-index: 25 !important;
+}
+
+.jiwu-marker {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.jiwu-marker-light {
+	display: inline-block;
+	width: 20px;
+	height: 22.7px;
+}
+
+.jiwu-marker-light.fw_gy {
+	background: url("../img/tuFang/light/marker_gy.png")no-repeat;
+	background-size: 100% 100%
+}
+
+/* 车型 - 救援车 */
+.jiwu-marker.cx_jyc {
+	width: 30px;
+	height: 34.125px;
+	background: url(../img/jiWu/marker_jy_train.png)no-repeat;
+	background-size: 100% 100%;
+}
+.jiwu-marker.cx_bpbl {
+	background: url(../img/jiWu/备品备料-地图.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/* 车型 - 热备内燃机车 */
+.jiwu-marker.cx_rbnrjc {
+	width: 30px;
+	height: 34.125px;
+	background: url(../img/jiWu/marker_nr_train.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 车型 - 热备电力机车 */
+.jiwu-marker.cx_rbdljc {
+	width: 30px;
+	height: 34.125px;
+	background: url(../img/jiWu/marker_dl_train.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 管辖范围 - 公寓 */
+.jiwu-marker.fw_gy {
+	background: url(../img/jiWu/公寓.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 管辖范围 - 百吨闸瓦力列车限速 */
+.jiwu-marker.fw_bdz {
+	/* background: url(../img/jiWu/小学地图.png)no-repeat; */
+	background-size: 100% 100%;
+}
+/* 管辖范围 - 机外大坡道特殊车站 */
+.jiwu-marker.fw_jwcz {
+	background: url(../img/jiWu/机外大坡道特殊车站.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 救援起复设备 - 救援设备 */
+.jiwu-marker.jy_jysb {
+	/* background: url(../img/jiWu/小学地图.png)no-repeat; */
+	background-size: 100% 100%;
+}
+.jiwu-marker.byct {
+	background: url("../img/tuFang/卫生监督所-西昌.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+
+.marker-jiwu-info-popup {
+	background: rgba(26,40,74, .9);
+	color: white;
+}
+
+.marker-jiwu-info-tip {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 2px;
+	height: 60px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background: #A08134;
+}
+
+.marker-jiwu-info-tip::before {
+	content: "";
+	position: absolute;
+	top: 22px;
+	left: -12px;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-left-width: 0;
+	border-right-color: #A08134;
+	border-width: 6px;
+}
+
+/* 内燃机车 */
+.marker-jiwu-info-tip.nrjc{
+	background: #A6ABE2;
+}
+.marker-jiwu-info-tip.nrjc::before{
+	border-right-color: #A6ABE2;
+}
+/* 公寓 */
+.marker-jiwu-info-tip.gy{
+	background: #8E58CA;
+}
+.marker-jiwu-info-tip.gy::before{
+	border-right-color: #8E58CA;
+}
+
+/* 运输详情窗口 */
+.marker-jiwu-info{
+	border-collapse: collapse;
+	font-size: 14px;
+	padding-top: 20px;
+}
+.marker-jiwu-info>table{
+	width: 100%;
+}
+.marker-jiwu-info .blue {
+	color: #68A2FA;
+}
+.marker-jiwu-info .orange {
+	color: #FDA629;
+}
+.marker-jiwu-info .red {
+	color: #EF5659;
+}
+
+/* 车型 */
+.marker-jiwu-info .log {
+	display: inline-block;
+	width: 100px;
+	height: 60px;
+	background: url(../img/jiWu/救援车大图.png)no-repeat;
+	background-position: center 10px;
+	background-size: 60px 40px;
+}
+.marker-jiwu-info .log.nrjc {
+	display: inline-block;
+	width: 100px;
+	height: 60px;
+	background: url(../img/yunShu/调车机车.png)no-repeat;
+	background-position: center 0px;
+	background-size: 60px 60px;
+}
+.marker-jiwu-info .log.gy {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/jiWu/公寓大图.png)no-repeat;
+	background-position: center 0px;
+	background-size: 60px 60px;
+}
+.marker-jiwu-info .line-h{
+	border-left:1px solid #131C36;
+}
+.marker-jiwu-info .line-v{
+	border-top:1px solid #131C36;
+}
+.marker-jiwu-info .tab {
+	width: 100%;
+	padding-top:10px;
+	padding-left: 10px;
+	border-bottom: 2px solid #2568ED;
+}
+.marker-jiwu-info .tab>span {
+	display: inline-block;
+	padding: 3px 15px 0px 15px;
+	color: #7A8CD8;
+}
+.marker-jiwu-info .tab>span.active{
+	background: #2568ED;
+	color: white;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+.marker-jiwu-info .tit{
+	text-align: center;
+	width: 130px;
+	font-size: 16px;
+	letter-spacing: 2px;
+	padding-bottom: 10px;
+}
+.marker-jiwu-info .tit2{
+	text-align: center;
+	width: 130px;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+.marker-jiwu-info .sub-tit{
+	width: 100px;
+	text-align: center;
+}
+
+.marker-jiwu-info .detail-item{
+	width: 420px;
+	padding: 5px 8px;
+	display: none;
+}
+.marker-jiwu-info .detail-item.show{
+	display: block;
+}
+
+.marker-jiwu-info .list-item {
+	padding:3pxpx;
+
+}
+
+.marker-jiwu-info .list-item>span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 70px;
+	padding-right: 5px;
+	text-align: right;
+}
+.marker-jiwu-info .list-item.auto {
+	display: inline-block;
+	vertical-align: middle;
+	width: 49%;
+}
+.marker-jiwu-info .list-item.auto.inline{
+	width: 100%;
+}
+.marker-jiwu-info .list-item.auto>span {
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+	padding-right: 5px;
+}
+
+.marker-jiwu-info .select-item{
+	padding: 3px;
+	background: transparent;
+	color: #bec6da;
+	border: none;
+	outline: none;
+}
+.marker-jiwu-info .select-item>option{
+	background-color: #283D70;
+}
+.marker-jiwu-info .jw_cx_dljc_yxqk_detail{
+	display: none;
+}
+.marker-jiwu-info .jw_cx_dljc_yxqk_detail.show{
+	display:block;
+}

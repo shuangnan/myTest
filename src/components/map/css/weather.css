@@ -1,0 +1,27 @@
+/*天气*/
+.weather-icon-container{
+	z-index: 30!important;
+}
+.marker-weather {
+	font-size: 20px;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	margin-top: 20px;
+	margin-left: 20px;
+	text-align: center;
+	background: rgba(254, 254, 254, .2);
+	border-radius: 5px;
+}
+
+/* 天气预警 */
+.marker-weather.yujing {
+	background: transparent;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+.marker-weather>img {
+	width: 20px;
+	height: 20px;
+}

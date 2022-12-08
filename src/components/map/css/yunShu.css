@@ -1,0 +1,362 @@
+.yunshu-icon-container {
+	z-index: 25 !important;
+}
+
+.yunshu-marker {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.yunshu-marker-light {
+	display: inline-block;
+	width: 20px;
+	height: 22.7px;
+}
+
+.yunshu-marker-light.sbss-jyd {
+	background: url("../img/yunShu/light/marker_jyd.png")no-repeat;
+	background-size: 100% 100%;
+}
+.yunshu-marker-light.jflc-lcjz {
+	background: url("../img/yunShu/light/marker_lcjztl.png")no-repeat;
+	background-size: 100% 100%;
+}
+.yunshu-marker-light.jflc-lkjz {
+	background: url("../img/yunShu/light/marker_lklcjztl.png")no-repeat;
+	background-size: 100% 100%;
+}
+.yunshu-marker-light.dcjc-ddjc {
+	background: url("../img/yunShu/light/marker_ddjc.png")no-repeat;
+	background-size: 100% 100%;
+}
+.yunshu-marker-light.dcjc-snxyc {
+	background: url("../img/yunShu/light/marker_snxyzjc.png")no-repeat;
+	background-size: 100% 100%;
+}
+.yunshu-marker-light.dcjc-zydc {
+	background: url("../img/yunShu/light/marker_zydcjc.png")no-repeat;
+	background-size: 100% 100%;
+}
+.yunshu-marker-light.dcjc-lycz {
+	background: url("../img/yunShu/light/marker_lyczjc.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 救援队 */
+.yunshu-marker.sbss-jyd {
+	background: url(../img/yunShu/救援队.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 接发列车限制 */
+.yunshu-marker.jflc-tfx {
+	background: url(../img/yunShu/同方向同时发接列车限制.png)no-repeat;
+	background-size: 100% 100%;
+}
+.yunshu-marker.jflc-xdfx {
+	background: url(../img/yunShu/相对方向同时接车限制.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.yunshu-marker.jflc-lcjz {
+	background: url(../img/yunShu/lcxz-map.png)no-repeat;
+	background-size: 100% 100%;
+}
+.yunshu-marker.jflc-lkjz {
+	background: url(../img/yunShu/lkxz-map.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 调度机车 */
+.yunshu-marker.dcjc-ddjc {
+	width: 90px;
+	height: 25px;
+	background: url(../img/yunShu/调度机车.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 枢纽小运转车 */
+.yunshu-marker.dcjc-snxyc {
+	width: 90px;
+	height: 25px;
+	background: url(../img/yunShu/枢纽小运车机车.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 专用调度机车 */
+.yunshu-marker.dcjc-zydc {
+	width: 90px;
+	height: 25px;
+	background: url(../img/yunShu/专用调车机车.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 路用出租机车 */
+.yunshu-marker.dcjc-lycz {
+	width: 90px;
+	height: 25px;
+	background: url(../img/yunShu/路用出租机车.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.marker-yunshu-info-popup {
+	background: rgba(26,40,74, .9);
+	color: white;
+}
+
+.marker-yunshu-info-tip {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 2px;
+	height: 60px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background: #FFFE04;
+}
+
+.marker-yunshu-info-tip::before {
+	content: "";
+	position: absolute;
+	top: 22px;
+	left: -12px;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-left-width: 0;
+	border-right-color: #FFFE04;
+	border-width: 6px;
+}
+
+/* 专用调车机车1 */
+.marker-yunshu-info-tip.jctype1{
+	background: #FFFE04;
+}
+.marker-yunshu-info-tip.jctype1::before{
+	border-right-color: #FFFE04;
+}
+/* 枢纽小运车机车2 */
+.marker-yunshu-info-tip.jctype2{
+	background: #08C0BA;
+}
+.marker-yunshu-info-tip.jctype2::before{
+	border-right-color: #08C0BA;
+}
+/* 调度机车3 */
+.marker-yunshu-info-tip.jctype3{
+	background: #A1A6DD;
+}
+.marker-yunshu-info-tip.jctype3::before{
+	border-right-color: #A1A6DD;
+}
+/* 路用出租机车4 */
+.marker-yunshu-info-tip.jctype4{
+	background: #D78810;
+}
+.marker-yunshu-info-tip.jctype4::before{
+	border-right-color: #D78810;
+}
+
+
+
+/* 运输详情窗口 */
+.marker-yunshu-info{
+	border-collapse: collapse;
+	font-size: 14px;
+	padding-top: 20px;
+}
+.marker-yunshu-info>table{
+	width: auto;
+}
+.marker-yunshu-info .blue {
+	color: #68A2FA;
+}
+.marker-yunshu-info .orange {
+	color: #FDA629;
+}
+.marker-yunshu-info .red {
+	color: #EF5659;
+}
+.marker-yunshu-info.lkjz .log {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/yunShu/lkxz-win.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+.marker-yunshu-info.lcjz .log {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/yunShu/lcxz-win.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+
+
+/* 车务段 */
+.marker-yunshu-info.cwd .log {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/yunShu/车务段maker.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+.marker-yunshu-info.cwd .line-v{
+	width: 100%;
+	height:1px;
+	border-bottom:1px solid #131C36;
+	margin: 5px 0px;
+}
+.marker-yunshu-info.cwd .tit {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-top:20px;
+	letter-spacing: 2px;
+}
+.marker-yunshu-info.cwd .sub-tit {
+	font-size: 14px;
+	padding-left:10px;
+	letter-spacing: 2px;
+}
+
+.marker-yunshu-info.lcjz .tit {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-top:20px;
+	letter-spacing: 2px;
+}
+.marker-yunshu-info.lcjz .sub-tit {
+	font-size: 14px;
+	padding-left:10px;
+	letter-spacing: 2px;
+}
+
+.marker-yunshu-info.lkjz .list-item {
+	padding-left:10px;
+}
+
+.marker-yunshu-info.lkjz .list-item>span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 70px;
+	padding-right: 10px;
+	text-align: right;
+}
+.marker-yunshu-info-tip.lcxz{
+	background: #FD5A5A;
+}
+.marker-yunshu-info-tip.lcxz::before{
+	border-right-color: #FD5A5A;
+}
+/* 救援队 */
+.marker-yunshu-info.jyd .tit {
+	text-align: center;
+	font-size: 24px;
+	padding: 10px;
+	letter-spacing: 2px;
+}
+.marker-yunshu-info.jyd .sub-tit {
+	font-size: 14px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	letter-spacing: 2px;
+}
+.marker-yunshu-info.jyd .list-item {
+	padding: 3px;
+}
+
+.marker-yunshu-info.jyd .list-item>span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 70px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+/* 调车机车 */
+.marker-yunshu-info.jc .log {
+	display: inline-block;
+	width: 100px;
+	height: 60px;
+	background: url(../img/yunShu/调车机车.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+.marker-yunshu-info.jc .line-h{
+	border-left:1px solid #131C36;
+}
+.marker-yunshu-info.jc .line-v{
+	border-top:1px solid #131C36;
+}
+.marker-yunshu-info.jc .tab {
+	width: 100%;
+	padding-top:10px;
+	padding-left: 10px;
+	border-bottom: 2px solid #2568ED;
+}
+.marker-yunshu-info.jc .tab>span {
+	display: inline-block;
+	padding: 3px 15px 0px 15px;
+	color: #7A8CD8;
+}
+.marker-yunshu-info.jc .tab>span.active{
+	background: #2568ED;
+	color: white;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.marker-yunshu-info.jc .sub-tit{
+	width: 100px;
+	text-align: center;
+}
+.marker-yunshu-info.jc .tit{
+	text-align: center;
+	width: 130px;
+	font-size: 16px;
+}
+.marker-yunshu-info.jc .tit2{
+	text-align: center;
+	width: 130px;
+	padding-top: 5px;
+}
+.marker-yunshu-info.jc .detail-item{
+	width: 420px;
+	padding: 3px;
+	display: none;
+}
+.marker-yunshu-info.jc .detail-item.show{
+	display: block;
+}
+
+.marker-yunshu-info.jc .list-item {
+	padding:3px 10px;
+
+}
+
+.marker-yunshu-info.jc .list-item>span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 70px;
+	padding-right: 10px;
+	text-align: right;
+}
+.marker-yunshu-info .list-item.auto {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left:10px;
+	width: 49%;
+}
+.marker-yunshu-info.jc .list-item.auto.inline{
+	width: 100%;
+}
+.marker-yunshu-info.jc .list-item.auto>span {
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+	padding-right: 10px;
+}

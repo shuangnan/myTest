@@ -1,0 +1,428 @@
+.tufang-icon-container {
+	z-index: 25 !important;
+}
+
+.tufang-marker {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.tufang-marker-light {
+	display: inline-block;
+	width: 20px;
+	height: 22.7px;
+}
+
+.tufang-marker-light.sbss-shc {
+	background: url("../img/tuFang/light/marker_shc.png")no-repeat;
+	background-size: 100% 100%
+}
+
+.tufang-marker-light.sbss-yjcl {
+	background: url("../img/tuFang/light/marker_yjcl.png")no-repeat;
+	background-size: 100% 100%
+}
+
+.tufang-marker-light.sbss-wsjds {
+	background: url("../img/tuFang/light/marker_wsjds.png")no-repeat;
+	background-size: 100% 100%
+}
+
+.tufang-marker-light.sbss-jks {
+	background: url("../img/tuFang/light/marker_jks.png")no-repeat;
+	background-size: 100% 100%
+}
+
+.tufang-marker-light.sbss-scd {
+	background: url("../img/tuFang/light/marker_scd.png")no-repeat;
+	background-size: 100% 100%
+}
+
+.tufang-marker-light.sbss-shc {
+	background: url("../img/tuFang/light/marker_shc.png")no-repeat;
+	background-size: 100% 100%
+}
+
+/* 生活车 */
+.tufang-marker.sbss-shc {
+	width: 90px;
+	height: 25px;
+	background: url(../img/tuFang/生活车.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 应急材料 */
+.tufang-marker.sbss-yjcl {
+	background: url(../img/tuFang/应急材料.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 段 */
+.tufang-marker.sbss-d {
+	background: url(../img/tuFang/段.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 工区 */
+.tufang-marker.sbss-cz {
+	background: url(../img/tuFang/cz.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 车间 */
+.tufang-marker.sbss-cj {
+	background: url(../img/tuFang/车间.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 工区 */
+.tufang-marker.sbss-gq {
+	background: url(../img/tuFang/工区.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 卫生监督所 */
+.tufang-marker.sbss-wsjds {
+	background: url(../img/tuFang/卫生监督所.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 疾控所 */
+.tufang-marker.sbss-jks {
+	background: url(../img/tuFang/疾控所.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 送餐点 */
+.tufang-marker.sbss-scd {
+	background: url(../img/tuFang/送餐点.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 段范围 */
+.tufang-marker.fw-d,
+.tufang-marker.fw-cj,
+.tufang-marker.fw-gq{
+	width: 30px;
+	height: 60px;
+}
+.tufang-marker.fw-d>span {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/tuFang/段范围2.png)no-repeat;
+	background-size: 100% 100%;
+}
+.tufang-marker.fw-d>label {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/tuFang/段范围1.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 车间范围 */
+.tufang-marker.fw-cj>span {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/tuFang/车间范围2.png)no-repeat;
+	background-size: 100% 100%;
+}
+.tufang-marker.fw-cj>label {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/tuFang/车间范围1.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 工区范围 */
+.tufang-marker.fw-gq>span {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/tuFang/工区范围2.png)no-repeat;
+	background-size: 100% 100%;
+}
+.tufang-marker.fw-gq>label {
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/tuFang/工区范围1.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+/* marker详情 */
+.marker-tufang-info-popup {
+	background: rgba(26,40,74, .9);
+	color: white;
+}
+
+.marker-tufang-info-tip {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 2px;
+	height: 60px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background: #FFFE04;
+}
+
+.marker-tufang-info-tip::before {
+	content: "";
+	position: absolute;
+	top: 22px;
+	left: -12px;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-left-width: 0;
+	border-right-color: #FFFE04;
+	border-width: 6px;
+}
+
+/* 生活车 工区 */
+.marker-tufang-info-tip.sch,
+.marker-tufang-info-tip.gq{
+	background: #08C0BA;
+}
+
+.marker-tufang-info-tip.wsjds{
+	background: #52e7e9;
+}
+/* .marker-tufang-info-tip.wsjds::before{
+	background: #52e7e9;
+} */
+
+
+.marker-tufang-info-tip.bpbl{
+	background: #11CE25;
+}
+.marker-tufang-info-tip.bpbl::before{
+	border-right-color: #11CE25;
+}
+
+.marker-tufang-info-tip.jks{
+	background: #82d857;
+}
+.marker-tufang-info-tip.jks::before{
+	border-right-color: #82d857;
+}
+.marker-tufang-info-tip.sch::before,
+.marker-tufang-info-tip.wsjds::before{
+	border-right-color: #08C0BA;
+}
+/* 应急材料/段/段范围 */
+.marker-tufang-info-tip.yjcl,
+.marker-tufang-info-tip.d,
+.marker-tufang-info-tip.dfw{
+	background: #D78810;
+}
+.marker-tufang-info-tip.yjcl::before,
+.marker-tufang-info-tip.d::before,
+.marker-tufang-info-tip.dfw::before{
+	border-right-color: #D78810;
+}
+/* 车间 */
+.marker-tufang-info-tip.cj{
+	background: #FFFE04;
+}
+.marker-tufang-info-tip.cj::before{
+	border-right-color: #FFFE04;
+}
+
+
+/* 详情窗口 */
+.marker-tufang-info{
+	border-collapse: collapse;
+	font-size: 14px;
+	padding-top: 20px;
+}
+.marker-tufang-info .line-v{
+	width: 100%;
+	height:1px;
+	border-bottom:1px solid #131C36;
+	margin: 5px 0px;
+}
+.marker-tufang-info .line-h{
+	border-left:1px solid #131C36;
+}
+.marker-tufang-info .tit {
+	font-size: 18px;
+	padding-left: 10px;
+	letter-spacing: 2px;
+}
+.marker-tufang-info .tit2 {
+	font-size: 14px;
+	padding-left: 10px;
+	letter-spacing: 2px;
+}
+.marker-tufang-info .sub-tit {
+	font-size: 14px;
+	padding-left:10px;
+	letter-spacing: 2px;
+}
+.marker-tufang-info .tab {
+	width: 100%;
+	padding-top:10px;
+	padding-left: 10px;
+	border-bottom: 2px solid #2568ED;
+}
+.marker-tufang-info .tab>span {
+	display: inline-block;
+	padding: 3px 15px 0px 15px;
+	color: #7185db;
+}
+.marker-tufang-info .tab>span.active{
+	background: #2568ED;
+	color: white;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+.marker-tufang-info .detail-item{
+	width: 100%;
+	padding: 3px;
+	display: none;
+}
+.marker-tufang-info .detail-item.show{
+	display: block;
+}
+.marker-tufang-info .list-item {
+	padding:1px;
+}
+.marker-tufang-info .list-item>span {
+	display: inline-block;
+	vertical-align: middle;
+	/* width: 70px; */
+	padding-right: 3px;
+	text-align: right;
+}
+/* 宽度50% */
+.marker-tufang-info .list-item.auto {
+	display: inline-block;
+	vertical-align: middle;
+	width: 49%;
+}
+/* 一行 */
+.marker-tufang-info .list-item.auto.inline{
+	width: 100%;
+}
+/* 标题宽度自动 */
+.marker-tufang-info .list-item.auto>span {
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+	padding-right: 10px;
+}
+.marker-tufang-info .detail-table{
+	width: 100%;
+	text-align: center;
+}
+.marker-tufang-info .detail-table th{
+	color: #68A2FA;
+	padding: 2px;
+}
+.marker-tufang-info .detail-table td{
+	font-size: 12px;
+	border-bottom: 1px solid #4D5670;
+	padding:4px 2px;
+}
+.marker-tufang-info>table{
+	width: 100%;
+}
+.marker-tufang-info .blue {
+	color: #68A2FA;
+}
+.marker-tufang-info .orange {
+	color: #FDA629;
+}
+.marker-tufang-info .red {
+	color: #EF5659;
+}
+/* 生活车 */
+.marker-tufang-info.shc .log {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/tuFang/生活车大图.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+#tf_sbss_shc{
+	height: 150px;
+	padding: 10px;
+	overflow: auto;
+}
+
+
+.marker-tufang-info.bpbl .log {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/jiWu/备品备料-win.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+
+
+/* 应急资料 */
+.marker-tufang-info.yjcl .log {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/tuFang/应急材料大图.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+
+.marker-tufang-info.wsjds .log {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/tuFang/卫生监督所-大.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+.marker-tufang-info.jks .log {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/tuFang/疾控所-大.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+
+
+
+#tf_sbss_yjcl{
+	height: 150px;
+	padding: 10px;
+	overflow: auto;
+}
+/* 段 */
+.marker-tufang-info.d .log {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/tuFang/段大图.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+.marker-tufang-info.d>table{
+	width: auto;
+}
+/* 车间 */
+.marker-tufang-info.cj .log {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/tuFang/车间大图.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+/* 工区 */
+.marker-tufang-info.gq .log {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/tuFang/工区大图.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+
+
+

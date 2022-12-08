@@ -1,0 +1,149 @@
+.houqing-icon-container {
+	z-index: 25 !important;
+}
+
+.houqing-marker {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.houqing-marker-ga {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}
+
+/* 小学 */
+.houqing-marker.xiaoxue {
+	background: url(../img/houQing/小学地图.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.houqing-marker-ga.xiaoxue {
+	background: url(../img/houQing/小学地图.png)no-repeat;
+	background-size: 100% 100%;
+}
+/* 中学 */
+.houqing-marker.zhongxue {
+	background: url(../img/houQing/中学地图.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.houqing-marker-ga.zhongxue {
+	background: url(../img/houQing/中学地图.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 高中 */
+.houqing-marker.gaozhong {
+	background: url(../img/houQing/中学地图.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.houqing-marker-ga.gaozhong {
+	background: url(../img/houQing/中学地图.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 九年一贯制学校(中小学) */
+.houqing-marker.zhongxiaoxue {
+	background: url(../img/houQing/中学地图.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.houqing-marker-ga.zhongxiaoxue {
+	background: url(../img/houQing/中学地图.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 完全中学(初高中) */
+.houqing-marker.chugaozhong {
+	background: url(../img/houQing/中学地图.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.houqing-marker-ga.chugaozhong {
+	background: url(../img/houQing/中学地图.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/* 后勤详情 */
+.marker-houqing-info-popup {
+	background: rgba(26,40,74, .9);
+	color: white;
+}
+.marker-houqing-info-tip {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 2px;
+	height: 60px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background: #FFFE04;
+}
+.marker-houqing-info-tip::before {
+	content: "";
+	position: absolute;
+	top: 22px;
+	left: -12px;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-left-width: 0;
+	border-right-color: #8ECE63;
+	border-width: 6px;
+}
+.marker-houqing-info-tip.xiaoxue {
+	background: #CCDB64;
+}
+.marker-houqing-info-tip.xiaoxue::before {
+	border-right-color: #CCDB64;
+}
+
+
+.marker-houqing-info{
+	border-collapse: collapse;
+	font-size: 14px;
+	padding-top: 20px;
+}
+.marker-houqing-info>table{
+	width: auto;
+}
+.marker-houqing-info .blue {
+	color: #68A2FA;
+}
+.marker-houqing-info .orange {
+	color: #FDA629;
+}
+.marker-houqing-info .red {
+	color: #EF5659;
+}
+
+/* 学校 */
+.marker-houqing-info.xuexiao .pic.xiaoxue {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/houQing/小学大图.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+.marker-houqing-info.xuexiao .pic.zhongxue {
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+	background: url(../img/houQing/中学大图.png)no-repeat;
+	background-position-x: center;
+	background-size: 60px 60px;
+}
+.marker-houqing-info.xuexiao .tit{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}

@@ -1,0 +1,35 @@
+.jiaotong-marker {
+	display: inline-block;
+	width:auto;
+	height: 28px;
+}
+
+.marker-ditie-arrow {
+	background-image: url(../img/jiaotong/metro-mark.png);
+	background-repeat: no-repeat;
+	height:4px;
+}
+
+.jiaotong-marker.marker-ditie {
+	transform: translateX(-50%);
+	border-image-source: url(../img/jiaotong/metro.png);
+	border-image-slice:4 24 4 24 fill;
+	border-image-width:4px 24px 4px 24px;
+	background-size: 100% 100%;
+}
+
+.marker-ditie-text {
+    min-width: 74px;
+    max-width: 160px;
+	padding-left:28px;
+	padding-right:8px;
+    line-height: 28px;
+    display: inline-block;
+	white-space: nowrap;
+	font-size: 1.1em;
+}
+
+
+.jiaotong-icon-container {
+	z-index: 25 !important;
+}

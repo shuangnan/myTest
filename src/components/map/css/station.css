@@ -1,0 +1,707 @@
+.station-icon-container {
+	z-index: 25 !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+}
+
+/* 筛选得到的车站样式 */
+.station-marker.filtered {
+	animation: filteredAnimate 1.5s;
+	/* animation-iteration-count: infinite; */
+	animation-iteration-count: 3;
+}
+
+.station-marker {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}
+
+.station-marker.ga {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+}
+ 
+.station-marker.kyd {
+	width: 16px;
+	height: 16px;
+}
+
+.station-marker.K {
+	background-image: url(../img/station/station.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-blend-mode: lighten;
+	border-radius: 20px;
+}
+
+.station-marker.H {
+	background-image: url(../img/station/station.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-blend-mode: lighten;
+	border-radius: 20px;
+}
+
+.marker-station-info {
+	position: relative;
+}
+
+.marker-station-info>.top {
+	height: 150px;
+	border-bottom: 2px solid #131c36;
+}
+
+.marker-station-info>.top>.top-left {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 220px;
+	height: 100%;
+	padding: 23px 0 0 23px;
+	border-right: 2px solid #131c36;
+	white-space: nowrap;
+}
+/* 公安单独设置 */
+.marker-station-info>.top>.top-left.ga{
+	width: 320px;
+}
+
+.marker-station-info>.top>.top-left.has-hr {
+	cursor: pointer;
+}
+
+.marker-station-info>.top>.top-left::before {
+	content: "";
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 88px;
+	height: 105px;
+	background: url(../img/station/stationPicBox.png)no-repeat;
+	z-index: -1;
+}
+
+.marker-station-info>.top>.top-left>.pic {
+	display: inline-block;
+	width: 76px;
+	height: 76px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.marker-station-info>.top>.top-left>.pic>img {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+.marker-station-info>.top>.top-left>.pic-mz {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top:-12px;
+	left:25px;
+	background: url(../img/station/JINGMAO.png)no-repeat;
+	background-size: 100% 100%;
+}
+
+.marker-station-info>.top>.top-left>.text {
+	display: inline-block;
+	vertical-align: top;
+	width: 110px;
+	height: 100px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	color: #3e3e3f;
+}
+
+.marker-station-info>.top>.top-left>.text>h3 {
+	font-size: 24px;
+	margin: 0;
+	padding: 12px 0;
+	letter-spacing: 2px;
+	color: #3e3e3f;
+}
+
+.marker-station-info>.top>.top-right {
+	position: relative;
+	float: right;
+	display: inline-block;
+	vertical-align: top;
+	width: 310px;
+	height: 100%;
+}
+
+/* 车站按钮 */
+.marker-station-info>.top>.top-right>.btns {
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 65px;
+	padding: 10px;
+	left: 0;
+	bottom: 0;
+}
+/* 派出所按钮 */
+.marker-station-info>.top>.top-right>.btns.pcs {
+	top: 40px;
+	color: #3e3e3f;
+	font-size: 12px;
+}
+
+.marker-station-info>.top>.top-right>.btns>span {
+	display: inline-block;
+	width: 25%;
+	padding-top: 40px;
+	font-size: 12px;
+	text-align: center;
+	transition: transform .3s;
+}
+
+.marker-station-info>.top>.top-right>.btns>span:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	/* transform: scale(1.1); */
+}
+
+.marker-station-info>.top>.top-right>.btns>.zx {
+	background: url(../img/station/btn_zx.png)no-repeat;
+	background-position: center 0;
+}
+
+.marker-station-info>.top>.top-right>.btns>.syt {
+	background: url(../img/station/btn_syt.png)no-repeat;
+	background-position: center 0;
+}
+
+.marker-station-info>.top>.top-right>.btns>.sp {
+	background: url(../img/station/btn_sp.png)no-repeat;
+	background-position: center 0;
+}
+
+.marker-station-info>.top>.top-right>.btns>.zht {
+	background: url(../img/station/btn_zht.png)no-repeat;
+	background-position: center 0;
+}
+
+/* 基本情况 */
+.marker-station-info>.top>.top-right>.btns>.jbqk {
+	background: url(../img/station/基本情况.png)no-repeat;
+	background-position: center 0;
+}
+
+/* 两队一室 */
+.marker-station-info>.top>.top-right>.btns>.ldys {
+	background: url(../img/station/两队一室.png)no-repeat;
+	background-position: center 0;
+}
+
+/* 主要数据 */
+.marker-station-info>.top>.top-right>.btns>.zysj {
+	background: url(../img/station/主要数据.png)no-repeat;
+	background-position: center 0;
+}
+
+/* 警力部署 */
+.marker-station-info>.top>.top-right>.btns>.jlbs {
+	background: url(../img/station/警力部署.png)no-repeat;
+	background-position: center 0;
+}
+
+/* echart 统计图表 */
+.marker-station-info>.chart {
+	height: 180px;
+	border-bottom: 2px solid #131c36;
+}
+
+.marker-station-info>.bottom {
+	height: 200px;
+	font-size: 12px;
+}
+
+.marker-station-info>.bottom>.bottom-left {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	height: 100%;
+	padding-top: 30px;
+	border-right: 2px solid #131c36;
+}
+
+.marker-station-info>.bottom>.bottom-left>.tit-con {
+	position: absolute;
+	top: 12px;
+	left: 15px;
+	font-size: 14px;
+}
+
+.marker-station-info>.bottom>.bottom-right {
+	position: relative;
+	float: right;
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	height: 100%;
+	padding-top: 30px;
+}
+
+.marker-station-info>.bottom>.bottom-right>.tit-con {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+}
+
+.marker-station-info>.bottom>.bottom-right>.tit-con>label {
+	float: right;
+}
+
+/* 正晚点情况 */
+.marker-station-info .late-list {
+	list-style: none;
+	padding: 10px;
+	margin: 0;
+	color: #ffffff;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.marker-station-info .late-list>li {
+	padding: 3px 5px;
+	border-bottom: 1px solid #6F778B;
+}
+
+.marker-station-info .late-list>li:first-child {
+	border-top: 1px solid #6F778B;
+}
+
+.marker-station-info .late-list>li>div {
+	padding: 1px 0;
+}
+
+.marker-station-info .late-list>li>div>.train {
+	color: #69c1ff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.marker-station-info .late-list>li>div>label {
+	float: right;
+	display: inline-block;
+	width: 90px;
+}
+
+.marker-station-info .late-list>li>div>label>i {
+	font-style: normal;
+	color: #fa4c0a;
+}
+
+/* 人员安排 */
+.marker-station-info .person-table {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	padding: 10px;
+}
+
+.marker-station-info .no-data {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -30px;
+	color: #cecece;
+}
+
+.marker-station-info .person-table td {}
+
+.marker-station-info .person-table td:nth-child(1) {
+	width: 70px;
+}
+
+.marker-station-info .person-table td:nth-child(3) {
+	width: 50px;
+	text-align: center;
+}
+
+.marker-station-info .person-table td:nth-child(3)>span {
+	font-size: 12px;
+}
+
+.marker-station-info .person-table td:nth-child(4) {
+	width: 30px;
+	font-size: 12px;
+	color: #6c9afa;
+	text-align: right;
+}
+
+.marker-station-info .person-table td>.per-con {
+	display: inline-block;
+	height: 22px;
+}
+
+.marker-station-info .person-table td>.per-con>i {
+	display: inline-block;
+	vertical-align: middle;
+	height: 22px;
+	width: 14px;
+	background: url(../img/station/person.png)no-repeat;
+	background-position: center;
+}
+
+
+/* 奋斗必保样式 */
+.marker-station-info .fdbbPress {
+	position: relative;
+	color: #959fa2;
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+.marker-station-info .fdbbPress>.press-left {
+	position: relative;
+	width: 100%;
+	padding-top: 0px;
+	padding-left: 10px;
+}
+
+.marker-station-info .press-text>div:first-child {
+	padding-left: 70px;
+	padding-top: 15px;
+}
+
+.marker-station-info .press-pic {
+	position: absolute;
+	top: -10px;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	background: url(../img/station/wcsr.png)no-repeat;
+	background-size: 40px 30px;
+	background-position: 10px 15px;
+}
+
+.marker-station-info .total-con {
+	padding-top: 10px;
+}
+
+.marker-station-info .press-total {
+	display: inline-block;
+	vertical-align: bottom;
+	padding-right: 5px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fefffa;
+}
+
+.marker-station-info .fdbbPress>.press-right {
+	position: absolute;
+	right: 10px;
+	top: 55px;
+	width: 150px;
+}
+
+/* 进度条容器 */
+.marker-station-info .press-con {
+	position: relative;
+	width: 100%;
+	height: 10px;
+}
+
+.marker-station-info .press-item {
+	position: absolute;
+	left: 0;
+	top: 0px;
+	height: 100%;
+	border: 1px solid #5c6375;
+	border-radius: 3px;
+	transform: skew(-40deg);
+}
+
+/* 进度条背景 */
+.marker-station-info .press-item.back {
+	width: 100%;
+	background: #3d3425;
+	z-index: 1;
+}
+
+/* 当前完成 */
+.marker-station-info .press-item.cur {
+	background: #fefffa;
+	z-index: 4;
+	box-shadow: 0 0 10px #0000ff, 0 0 20px #fff;
+}
+
+/* 必保 */
+.marker-station-info .press-item.bb {
+	background: #3c4228;
+	border-right: 3px solid #070e34;
+	z-index: 3;
+}
+
+.marker-station-info .bb_icon {
+	content: "";
+	position: absolute;
+	top: -20px;
+	right: 5px;
+	width: 6px;
+	height: 13px;
+	transform: skew(40deg);
+	overflow: hidden;
+}
+
+.marker-station-info .bb_icon>div {
+	height: 200%;
+	width: 100%;
+	background: url(../img/station/wcsr_bb.png) repeat-y;
+}
+
+/* 奋斗 */
+.marker-station-info .press-item.fd {
+	background: #3c4258;
+	border-right: 3px solid #070e34;
+	z-index: 2;
+}
+
+.marker-station-info .fd_icon {
+	content: "";
+	position: absolute;
+	top: -20px;
+	right: 5px;
+	width: 6px;
+	height: 14px;
+	background-size: 100% 100%;
+	transform: skew(40deg);
+	overflow: hidden;
+}
+
+.marker-station-info .fd_icon>div {
+	height: 200%;
+	width: 100%;
+	background: url(../img/station/wcsr_fd.png) repeat-y;
+}
+
+.marker-station-info .fd_icon>div:hover {
+	transform: translateY(-3px);
+}
+
+
+/* 车站客运看板窗口 */
+.hspeed-railway-win {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(36, 53, 81, 76);
+	z-index: 600;
+	overflow: hidden;
+}
+
+.hspeed-railway-win>.log {
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	top: 5px;
+	width: 300px;
+	height: 55px;
+	background: url(../img/station/infoLog.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.hspeed-railway-win>.close {
+	display: inline-block;
+	position: absolute;
+	right: 140px;
+	top: 19px;
+}
+
+
+/* 车站信息---应急指挥中心版本 */
+.marker-station-info-ys-tip {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 2px;
+	height: 60px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background: #56B7EF;
+}
+
+.marker-station-info-ys-tip::before {
+	content: "";
+	position: absolute;
+	top: 22px;
+	left: -12px;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+	border-left-width: 0;
+	border-right-color: #56B7EF;
+	border-width: 6px;
+}
+
+.marker-station-info-ys {
+	border-collapse: collapse;
+	font-size: 14px;
+	padding-top: 3px;
+}
+
+.marker-station-info-ys .pic-con {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 110px;
+	height: 150px;
+	padding: 23px 0 0 23px;
+	white-space: nowrap;
+}
+
+.marker-station-info-ys .pic-con::before {
+	content: "";
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 88px;
+	height: 105px;
+	background: url(../img/station/stationPicBox.png)no-repeat;
+	z-index: -1;
+}
+
+.marker-station-info-ys .pic {
+	display: inline-block;
+	width: 76px;
+	height: 76px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.marker-station-info-ys .pic>img {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.marker-station-info-ys .line-h {
+	border-right: 1px solid #131C36;
+}
+
+.marker-station-info-ys .line-v {
+	border-bottom: 1px solid #131C36;
+}
+
+.marker-station-info-ys .tit {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+	width: 100px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.marker-station-info-ys .sub-tit {
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+	padding-top: 15px;
+	letter-spacing: 2px;
+}
+
+.marker-station-info-ys .btns {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 400px;
+	height: 65px;
+	padding: 20px 0px;
+}
+
+.marker-station-info-ys .btns>span {
+	display: inline-block;
+	width: 25%;
+	padding-top: 45px;
+	font-size: 12px;
+	text-align: center;
+	transition: transform .3s;
+}
+
+.marker-station-info-ys .btns>span:hover {
+	opacity: 0.8;
+}
+
+.marker-station-info-ys .btns>.zx {
+	background: url(../img/station/btn_zx.png)no-repeat;
+	background-position: center 0;
+}
+
+.marker-station-info-ys .btns>.syt {
+	background: url(../img/station/btn_syt.png)no-repeat;
+	background-position: center 0;
+}
+
+.marker-station-info-ys .btns>.sp {
+	background: url(../img/station/btn_sp.png)no-repeat;
+	background-position: center 0;
+}
+
+/*股道占用 按钮图标*/
+.marker-station-info-ys .btns>.zht {
+	background: url(../img/station/btn_zht.png)no-repeat;
+	background-position: center 0;
+}
+
+.marker-station-info-ys .btns>.gd {
+	background: url(../img/station/股道占用1.png)no-repeat;
+	background-position: center 0;
+}
+
+.marker-station-info-ys .list-item {
+	float: left;
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+	padding: 1px;
+}
+
+.marker-station-info-ys .list-item.zhanzhang {
+	width: 110px;
+}
+
+.marker-station-info-ys .list-item>div {
+	background: #141E38;
+	padding: 2px;
+	margin-top: 2px;
+	height: 26px;
+	line-height: 22px;
+}
+
+.marker-station-info-ys .list-item>div.zhanzhang {
+	padding-left: 20px;
+	background: #141E38 url(../img/yunShu/人员.png)no-repeat;
+	background-position: 0 5px;
+	background-size: 16px 16px;
+}
+
+.marker-station-info-ys .list-item>div.dianhua {
+	padding-left: 20px;
+	background: #141E38 url(../img/yunShu/电话.png)no-repeat;
+	background-position: 0 6px;
+	background-size: 16px 16px;
+}
+
+.marker-station-info-ys .list-item>div.shouji {
+	padding-left: 15px;
+	background: #141E38 url(../img/yunShu/手机.png)no-repeat;
+	background-position: 0 6px;
+	background-size: 16px 16px;
+}

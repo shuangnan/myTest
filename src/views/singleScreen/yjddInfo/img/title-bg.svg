@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1797" height="162.225" viewBox="0 0 1797 162.225">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0f1e41" stop-opacity="0.698"/>
+      <stop offset="1" stop-color="#131b2e" stop-opacity="0.698"/>
+    </linearGradient>
+  </defs>
+  <g id="组_2679" data-name="组 2679" transform="translate(-62)">
+    <g id="交叉_12" data-name="交叉 12" transform="translate(4250.126 -1424)" fill="url(#linear-gradient)">
+      <path d="M -2749.629638671875 1585.724975585938 L -3830.622314453125 1585.724975585938 L -3944.162353515625 1424.499877929688 L -2636.089599609375 1424.499877929688 L -2749.629638671875 1585.724975585938 Z" stroke="none"/>
+      <path d="M -2749.88916015625 1585.224975585938 L -2637.053466796875 1424.999877929688 L -3943.198486328125 1424.999877929688 L -3830.36279296875 1585.224975585938 L -2749.88916015625 1585.224975585938 M -2749.370361328125 1586.224975585938 L -3830.8818359375 1586.224975585938 L -3945.1259765625 1423.999877929688 L -2635.1259765625 1423.999877929688 L -2749.370361328125 1586.224975585938 Z" stroke="none" fill="#18acff"/>
+    </g>
+    <g id="组_2668" data-name="组 2668" transform="translate(5279.879 68.366) rotate(180)">
+      <path id="减去_224" data-name="减去 224" d="M24.757,42.593h-.008A85.248,85.248,0,0,0,0,0H.412A67.793,67.793,0,0,0,25.448,4.627a68.628,68.628,0,0,0,23.4-4A85.311,85.311,0,0,0,24.758,42.589Z" transform="translate(4782.368 11.29) rotate(-90)" fill="#00a3ff"/>
+      <path id="减去_222" data-name="减去 222" d="M24.757,42.593h-.008A85.248,85.248,0,0,0,0,0H.412A67.793,67.793,0,0,0,25.448,4.627a68.628,68.628,0,0,0,23.4-4A85.311,85.311,0,0,0,24.758,42.589Z" transform="translate(4757.398 11.29) rotate(-90)" fill="#00a3ff" opacity="0.2"/>
+    </g>
+    <g id="组_2669" data-name="组 2669" transform="translate(-3359.879 94.634)">
+      <path id="减去_224-2" data-name="减去 224" d="M24.757,42.593h-.008A85.248,85.248,0,0,0,0,0H.412A67.793,67.793,0,0,0,25.448,4.627a68.628,68.628,0,0,0,23.4-4A85.311,85.311,0,0,0,24.758,42.589Z" transform="translate(4782.368 11.29) rotate(-90)" fill="#00a3ff"/>
+      <path id="减去_222-2" data-name="减去 222" d="M24.757,42.593h-.008A85.248,85.248,0,0,0,0,0H.412A67.793,67.793,0,0,0,25.448,4.627a68.628,68.628,0,0,0,23.4-4A85.311,85.311,0,0,0,24.758,42.589Z" transform="translate(4757.398 11.29) rotate(-90)" fill="#00a3ff" opacity="0.2"/>
+    </g>
+    <circle id="椭圆_573" data-name="椭圆 573" cx="18" cy="18" r="18" transform="translate(62 64)" fill="#00a3ff"/>
+    <circle id="椭圆_574" data-name="椭圆 574" cx="18" cy="18" r="18" transform="translate(118 64)" fill="#00a3ff" opacity="0.5"/>
+    <circle id="椭圆_575" data-name="椭圆 575" cx="18" cy="18" r="18" transform="translate(170 64)" fill="#00a3ff" opacity="0.2"/>
+    <circle id="椭圆_576" data-name="椭圆 576" cx="18" cy="18" r="18" transform="translate(1715 64)" fill="#00a3ff" opacity="0.2"/>
+    <circle id="椭圆_577" data-name="椭圆 577" cx="18" cy="18" r="18" transform="translate(1768 64)" fill="#00a3ff" opacity="0.5"/>
+    <circle id="椭圆_578" data-name="椭圆 578" cx="18" cy="18" r="18" transform="translate(1823 64)" fill="#00a3ff"/>
+  </g>
+</svg>

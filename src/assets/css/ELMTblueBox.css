@@ -1,0 +1,293 @@
+/* 解决抽屉打开默认选中问题 */
+>>> .el-drawer__body span:focus {
+  outline: 0 !important;
+}
+>>> .outLine {
+  outline: 0 !important;
+}
+.customDialog {
+  border: 2px solid #406baf;
+  padding: 5px;
+  background: #7791c9 !important;
+  padding-top: 0px;
+}
+.customDialog .el-dialog__title {
+  color: #fff;
+}
+.customDialog .el-dialog__header {
+  padding: 5px !important;
+  /* background-color: #6b78eb; */
+}
+.customDialog .el-dialog__headerbtn {
+  color: #fff !important;
+}
+.customDialog .el-dialog__close {
+  color: #fff !important;
+}
+.customDialog .el-dialog__footer {
+  background: #fff;
+}
+.customDialog .el-dialog__body {
+  border-top: none;
+  border-bottom: none;
+}
+.customDialog .el-button {
+  font-size: 12;
+  padding: 7px 15px;
+}
+.customMessage {
+  border: 2px solid #406baf;
+  padding: 5px !important;
+  background: #7791c9 !important;
+  padding-top: 0px;
+}
+.customMessage .el-message-box__title {
+  color: #fff;
+}
+.customMessage .el-message-box__headerbtn {
+  top: 10px;
+}
+.customMessage .el-message-box__header {
+  padding: 5px !important;
+  /* background-color: #6b78eb; */
+}
+.customMessage .el-message-box__content {
+  background: #fff;
+  opacity: 0.85;
+}
+.customMessage .el-message-box__btns {
+  background: #fff;
+  opacity: 0.85;
+  padding-bottom: 5px;
+}
+.customMessage .el-message-box__close {
+  color: #fff !important;
+}
+.customNotify {
+  border: 2px solid #406baf;
+  padding: 5px !important;
+  background: #7791c9 !important;
+  padding-top: 0px;
+  width: auto !important;
+}
+.customNotify .el-notification__group {
+  margin: 0px;
+}
+.customNotify .el-notification__content {
+  background: #fff;
+  opacity: 0.85;
+  padding: 5px;
+  width: 360px;
+  height: 130px;
+}
+.customNotify .el-notification__closeBtn {
+  color: #fff !important;
+  top: 8px;
+  right: 1px;
+}
+.customNotify .el-notification__title {
+  color: #fff;
+}
+.customNotify1 {
+  border: 2px solid #406baf;
+  padding: 5px !important;
+  background: #7791c9 !important;
+  padding-top: 0px;
+  width: auto !important;
+}
+.customNotify1 .el-notification__closeBtn {
+  color: #fff !important;
+  top: 8px;
+  /* right: 1px; */
+}
+.customNotify1 .el-notification__content {
+  color:#fff;
+  max-width: 360px;
+}
+.el-notification.customNotify1{
+  border:none;
+}
+.customPopper {
+  background: #7791c9 !important;
+}
+.customPopper .popper__arrow {
+  border-right-color: #7791c9 !important;
+}
+.customPopper .popper__arrow::after {
+  border-right-color: #7791c9 !important;
+}
+.customPopper1 {
+  background: #7791c9 !important;
+  opacity: 0.95;
+  font-weight: 100;
+  border: none;
+}
+.customPopper1 .popper__arrow {
+  border-right-color: #7791c9 !important;
+}
+.customPopper1 .popper__arrow::after {
+  border-right-color: #7791c9 !important;
+}
+.customPopper2 {
+  padding: 0px !important;
+  border: none !important;
+  background: rgb(28, 37, 92) !important;
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.3) !important;
+}
+.ELMTblue .el-input input {
+  background-color: #3b4589 !important;
+  color: #97a0da !important;
+  border: 1px solid #2b3870 !important;
+}
+.ELMTblue2 .el-input input {
+  background-color: transparent !important;
+  color: #c2c7eb !important;
+  border: 1px solid transparent !important;
+}
+.ELMTblue3 .el-input input {
+  background-color: #66b1ff !important;
+  border-color: #66b1ff !important;
+  color: #fff !important;
+}
+.ELMTblue2 .el-radio__inner {
+  border-color: #606266;
+  background-color: #b9bdc0;
+}
+.customDropDownBlue {
+  background-color: rgb(15, 80, 177) !important;
+  border: none !important;
+}
+.customDropDownBlue .el-dropdown-menu__item {
+  color: #eee;
+}
+.customDropDownBlue .popper__arrow {
+  border-bottom-color: rgb(15, 80, 177) !important;
+}
+.customDropDownBlue .popper__arrow::after {
+  border-bottom-color: rgb(15, 80, 177) !important;
+}
+/* 下拉树 */
+
+.selectTreeOne > .el-scrollbar {
+  background-color: rgba(52, 65, 87, 0.9) !important;
+}
+.selectTreeOne .el-tree {
+  background-color: transparent;
+  color: #fff;
+}
+.selectTreeOne.el-select-dropdown {
+  border: none;
+  background-color: transparent;
+}
+.selectTreeOne .el-tree-node__content:hover {
+  background-color: transparent;
+  color: #60aff6 !important;
+}
+.selectTreeOne .el-select-dropdown__item.hover,
+.selectTreeOne .el-select-dropdown__item:hover {
+  background-color: transparent;
+}
+.selectTreeOne .el-tree-node:focus > .el-tree-node__content {
+  background-color: transparent;
+}
+.selectTreeOne .el-select-dropdown {
+  background-color: transparent;
+}
+.selectTreeOne .popper__arrow {
+  border-bottom-color: rgba(52, 65, 87, 0.9) !important;
+}
+.selectTreeOne .popper__arrow::after {
+  border-bottom-color: rgba(52, 65, 87, 0.9) !important;
+}
+.selectTreeOne .el-select-dropdown__wrap {
+  margin-right: 0px !important;
+}
+.selectTreeOne .el-scrollbar__wrap {
+  overflow: auto !important;
+}
+
+/* 大屏---输入框---蓝色调 */
+.blue-control.el-input__inner,
+.blue-control .el-input__inner,
+.blue-control .el-input.is-disabled .el-input__inner,
+.blue-control .el-textarea__inner,
+.blue-control .el-range-input{
+  background-color: transparent;
+  border-color: #5d6375;
+  color: #fafafa;
+}
+.blue-control.mini .el-input__inner{
+	padding: 0 0 0 5px;
+}
+
+.blue-control.mini ..el-input__suffix{
+	right: 0;
+}
+
+/* 大屏---下拉框弹出层容器---蓝色调 */
+.blue-control.el-select-dropdown {
+  background-color: rgba(52, 65, 87, 0.9);
+  border: none;
+}
+
+.blue-control .el-select-dropdown__item {
+  color: #fff;
+  /* font: normal 14px microsoft yahei; */
+}
+
+.blue-control .el-select-dropdown__item.selected,
+.blue-control .el-select-dropdown__item.hover,
+.blue-control .el-select-dropdown__item:hover {
+  background-color: unset;
+  color: #60aff6;
+}
+
+.blue-control.el-popper[x-placement^="bottom"] .popper__arrow,
+.blue-control.el-popper[x-placement^="bottom"] .popper__arrow::after {
+  border-bottom-color: #374568;
+}
+
+/* 大屏---菜单容器---蓝色调 */
+.blue-control.el-menu {
+  background-color: transparent;
+}
+
+.blue-control > .el-submenu {
+  width: 100%;
+}
+
+.blue-control.el-menu--horizontal > .el-submenu.is-active .el-submenu__title {
+  color: white;
+  padding: 0 10px;
+}
+
+.blue-control.el-menu--horizontal > .el-submenu .el-submenu__title {
+  height: 30px;
+  line-height: 30px;
+}
+
+.blue-control.el-menu--horizontal > .el-menu-item:not(.is-disabled):focus,
+.blue-control.el-menu--horizontal > .el-menu-item:not(.is-disabled):hover,
+.blue-control.el-menu--horizontal > .el-submenu .el-submenu__title:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.blue-control .el-menu,
+.blue-control.el-menu--horizontal .el-menu .el-menu-item {
+  background-color: rgba(52, 65, 87, 0.9);
+  color: #fff;
+}
+
+.blue-control.el-menu--horizontal .el-menu .el-menu-item.is-active,
+.blue-control.el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+  color: #60aff6;
+}
+
+/* 日期选择 */
+/* .blue-control.el-picker-panel{
+  background-color: rgba(52, 65, 87, 0.9);
+}
+.blue-control .el-month-table td .cell{
+	color: #fff;
+} */

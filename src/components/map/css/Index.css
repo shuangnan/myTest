@@ -1,0 +1,1524 @@
+/* 地图marker详情pop */
+.detail-pop-container {
+	z-index: 300 !important;
+}
+
+/* 所有地图可点击marker鼠标进入样式 */
+.marker-hover:hover {
+	outline: 1px solid #32AAEE;
+}
+
+.test-stn-icon-container {
+	z-index: 40 !important;
+	width: auto !important;
+	height: auto !important;
+}
+
+.test-stn-icon-container > div {
+	width: 60px !important;
+	height: 25px !important;
+}
+
+/* 地图元素筛选 */
+.filter-icon {
+	display: inline-block;
+	width: 14px !important;
+	height: 14px !important;
+	vertical-align: middle;
+	margin: 0 5px 0 8px;
+}
+.filter-icon-jcw {
+	display: inline-block;
+	width: 28px;
+	height: 12px;
+	vertical-align: middle;
+	margin: 0 8px 0 8px;
+}
+.filter-icon.ys-bpbl {
+	background: url("../img/jiWu/备品备料.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ys-lcjz {
+	background: url("../img/yunShu/lcxz.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ys-lcjz-light {
+	background: url("../img/yunShu/light/filter_lcjztl.png")no-repeat;
+	background-size: 100% 100%
+}
+
+.filter-icon.ys-lkjz {
+	background: url("../img/yunShu/lkxz.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ys-lkjz-light {
+	background: url("../img/yunShu/light/filter_lklcjztl.png")no-repeat;
+	background-size: 100% 100%
+}
+
+.filter-icon.kezhan {
+	background: url("../img/station/markerK.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.huozhan {
+	background: url("../img/station/markerH.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.dongche {
+	background: url("../img/filters/动车.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.puche {
+	background: url("../img/filters/普车.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.dzc {
+	background: url("../img/filters/到站车1.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.emergency-popper-class {
+	width: auto !important;
+	height: auto !important;
+}
+
+.emergency-popper-class .leaflet-popup-content-wrapper {
+	background: transparent !important;
+}
+
+.emergency-popper-class .leaflet-popup-content-wrapper .leaflet-popup-content {
+	margin: 0 !important;
+	width: auto !important;
+	height: auto !important;
+}
+
+.emergency-popper-class .leaflet-popup-tip-container .leaflet-popup-tip {
+	background: #102050;
+}
+
+.filter-icon.dandang {
+	display: none;
+}
+
+.filter-icon.dw_4g {
+	background: url("../img/dianWu/dw_4g.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.dw_gdsb {
+	background: url("../img/dianWu/dw_gdsb.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.dw_lksb {
+	background: url("../img/dianWu/dw_lksb.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.dw_xhj {
+	background: url("../img/dianWu/dw_xhj.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.dw_dx {
+	background: url("../img/dianWu/dw_dx.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.dw_bpbl {
+	background: url("../img/dianWu/dw_bpbl.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.dw_lksb_w {
+	background: url("../img/dianWu/dw_lksb_w.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.qiaoliang {
+	background: url("../img/filters/桥梁.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.suidao {
+	background: url("../img/filters/隧道.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tianqi {
+	background: url("../img/filters/天气情况.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tianqiyujing {
+	background: url("../img/filters/天气预警.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.dizhen {
+	background: url("../img/filters/地震.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 供电 */
+.filter-icon.gd-gdd {
+	background: url("../img/gongDian/供电段.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-gdd-light {
+	background: url("../img/gongDian/light/filter_gdd.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-gdb {
+	background: url("../img/gongDian/供电臂.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-gdb-light {
+	background: url("../img/gongDian/light/filter_gdb.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-bds {
+	background: url("../img/gongDian/变电所.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-bds-light {
+	background: url("../img/gongDian/light/filter_bds.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-gdgq {
+	background: url("../img/gongDian/供电工区.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-dfx {
+	background: url("../img/gongDian/电分相.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-dfx-light {
+	background: url("../img/gongDian/light/filter_dfx.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-cj {
+	background: url("../img/gongDian/车间.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-td {
+	background: url("../img/gongDian/停电.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-jjdd {
+	background: url("../img/gongDian/间接带电.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-yl {
+	background: url("../img/gongDian/远离.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-yjdy-light {
+	background: url("../img/gongDian/light/filter_yjdy.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-yjc {
+	background: url("../img/gongDian/应急车1.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-yjc-light {
+	background: url("../img/gongDian/light/filter_gd_gdc.png")no-repeat;
+	background-size: 100% 100%;
+}
+/* 接触网设施设备 */
+.filter-icon-jcw.gd-gz {
+	background: url("../img/gongDian/钢柱.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon-jcw.gd-hntz {
+	background: url("../img/gongDian/混凝土柱.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon-jcw.gd-fjymdgj {
+	background: url("../img/gongDian/非绝缘锚段关节.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon-jcw.gd-jymdgj {
+	background: url("../img/gongDian/绝缘锚段关节.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon-jcw.gd-fdjyq {
+	background: url("../img/gongDian/分段绝缘器.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon-jcw.gd-fxjyq {
+	background: url("../img/gongDian/分相绝缘器.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon-jcw.gd-gddlj {
+	background: url("../img/gongDian/股道电连接.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon-jcw.gd-ckkg {
+	background: url("../img/gongDian/常开开关.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon-jcw.gd-cbkg {
+	background: url("../img/gongDian/常闭开关.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon-jcw.gd-blq {
+	background: url("../img/gongDian/避雷器.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon-jcw.gd-xsxwz {
+	background: url("../img/gongDian/吸上线位置.png")no-repeat;
+	background-size: 100% 100%;
+}
+/* 范围 */
+.filter-icon.gd-gdbfw {
+	background: url("../img/gongDian/供电臂范围.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-dfxfw {
+	background: url("../img/gongDian/电分相范围.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-gqgxfw {
+	background: url("../img/gongDian/工区管辖范围.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gd-wdqfw {
+	background: url("../img/gongDian/无电区范围.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ky_sb_yl {
+	background: url("../img/keYun/filter_ky_sb_yl.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ky_sb_xf {
+	background: url("../img/keYun/filter_ky_sb_xf.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ky_sb_pcs {
+	background: url("../img/keYun/filter_ky_sb_pcs.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ky_sb_yjys {
+	background: url("../img/keYun/filter-yjys.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ky_sb_fdwz {
+	background: url("../img/keYun/filter-fdwz.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ky_sb_yjsscs {
+	background: url("../img/keYun/filter-yjsscs.png")no-repeat;
+	background-size: 100% 100%;
+}
+/* 机务 */
+/* 车型 - 救援车 */
+.filter-icon.jw-jw_cx_jyc {
+	background: url("../img/jiWu/救援车图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 车型 - 热备内燃机车 */
+.filter-icon.jw-jw_cx_rbnrjc {
+	background: url("../img/jiWu/内燃机图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 车型 - 热备电力机车 */
+.filter-icon.jw-jw_cx_rbdljc {
+	background: url("../img/jiWu/电力机图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.cl-byct {
+	background: url("../img/tuFang/卫生监督所-西昌-设备设施.png");
+	background-size: 100% 100%;
+}
+
+/* 管辖范围 - 公寓 */
+.filter-icon.jw-jw_fw_gy {
+	background: url("../img/jiWu/公寓图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.jw-jw_fw_gy-light {
+	background: url("../img/tuFang/light/filter_gy.png")no-repeat;
+	background-size: 100% 100%
+}
+
+/* 管辖范围 - 百吨闸瓦力列车限速 */
+.filter-icon.jw-jw_fw_bdz {
+	/* background: url("../img/jiWu/电力机图例.png")no-repeat; */
+	/* background-size: 100% 100%; */
+	position: relative;
+}
+
+.filter-icon.jw-jw_fw_bdz:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid #E38F08;
+}
+
+/* 管辖范围 - 机外大坡道特殊车站 */
+.filter-icon.jw-jw_fw_jwcz {
+	background: url("../img/jiWu/机外大坡道特殊车站.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 救援起复设备 - 救援设备 */
+.filter-icon.jw-jw_jy_jysb {
+	background: url("../img/yunShu/救援设备图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/* 运输 */
+.filter-icon.ys-jyd {
+	background: url("../img/yunShu/救援队图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ys-jyd-light {
+	background: url("../img/yunShu/light/filter_jyd.png")no-repeat;
+	background-size: 100% 100%
+}
+
+.filter-icon.ys-cwdfw {
+	position: relative;
+}
+
+.filter-icon.ys-cwdfw:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px dotted #E38F08;
+}
+
+.filter-icon.ys-jflcxz1 {
+	background: url("../img/yunShu/相对方向同时接车限制图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ys-jflcxz2 {
+	background: url("../img/yunShu/同方向同时发接列车限制图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ys-ddjc {
+	background: url("../img/yunShu/调度机车图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ys-ddjc-light {
+	background: url("../img/yunShu/light/filter_ddjc.png")no-repeat;
+	background-size: 100% 100%
+}
+
+.filter-icon.ys-snxyc {
+	background: url("../img/yunShu/枢纽小运车机车图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ys-snxyc-light {
+	background: url("../img/yunShu/light/filter_snxyzjc.png")no-repeat;
+	background-size: 100% 100%
+}
+
+.filter-icon.ys-zydc {
+	background: url("../img/yunShu/专用调车机车图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ys-zydc-light {
+	background: url("../img/yunShu/light/filter_zydcjc.png")no-repeat;
+	background-size: 100% 100%
+}
+
+.filter-icon.ys-lycz {
+	background: url("../img/yunShu/专用线调车机车图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ys-lycz-light {
+	background: url("../img/yunShu/light/filter_lyczjc.png")no-repeat;
+	background-size: 100% 100%
+}
+
+/* 土房 */
+.filter-icon.tufang-sbss-shc {
+	background: url("../img/tuFang/生活车图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.tufang-sbss-shc-light {
+	background: url("../img/tuFang/light/filter_shc.png")no-repeat;
+	background-size: 100% 100%
+}
+.filter-icon.tufang-sbss-yjcl {
+	background: url("../img/jiWu/救援设备图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.tufang-sbss-yjcl-light {
+	background: url("../img/tuFang/light/filter_yjcl.png")no-repeat;
+	background-size: 100% 100%
+}
+.filter-icon.tufang-sbss-wsjds {
+	background: url("../img/tuFang/卫生监督所-设备设施.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.tufang-sbss-wsjds-light {
+	background: url("../img/tuFang/light/filter_wsjds.png")no-repeat;
+	background-size: 100% 100%
+}
+.filter-icon.tufang-sbss-jks {
+	background: url("../img/tuFang/疾控所-设备设施.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.tufang-sbss-jks-light {
+	background: url("../img/tuFang/light/filter_jks.png")no-repeat;
+	background-size: 100% 100%
+}
+.filter-icon.tufang-sbss-scd {
+	background: url("../img/tuFang/送餐点-设备设施.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.tufang-sbss-scd-light {
+	background: url("../img/tuFang/light/filter_scd.png")no-repeat;
+	background-size: 100% 100%
+}
+.filter-icon.tufang-sbss-cj {
+	background: url("../img/tuFang/车间图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.tufang-sbss-gq {
+	background: url("../img/tuFang/工区图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.tufang-fw-d {
+	background: url("../img/tuFang/段范围图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.tufang-fw-cj {
+	background: url("../img/tuFang/车间范围图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.tufang-fw-gq {
+	background: url("../img/tuFang/工区范围图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/* 后勤 */
+.filter-icon.houqing-xiaoxue {
+	background: url("../img/houQing/小学图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.houqing-zhongxue {
+	background: url("../img/houQing/中学图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.houqing-gaozhong {
+	/* background: url("../img/houQing/中学图例.png")no-repeat; */
+	background-size: 100% 100%;
+}
+
+.filter-icon.houqing-zhongxiaoxue {
+	/* background: url("../img/houQing/中学图例.png")no-repeat; */
+	background-size: 100% 100%;
+}
+
+.filter-icon.houqing-chugaozhong {
+	/* background: url("../img/houQing/中学图例.png")no-repeat; */
+	background-size: 100% 100%;
+}
+
+.filter-icon.gongjiao {
+	background: url("../img/jiaotong/bus-exp.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gongxiangdanche {
+	background: url("../img/jiaotong/bike-exp.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.wangyueche {
+	background: url("../img/jiaotong/e-taxi-exp.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.chuzuche {
+	background: url("../img/jiaotong/taxi-exp.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ditie {
+	background: url("../img/jiaotong/metro-exp.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tingchechang {
+	background: url("../img/jiaotong/parking-exp.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gongwugongqu {
+	background: url("../img/equipment/工务工区图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.handong {
+	background: url("../img/equipment/涵洞图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.jiechuwang {
+	background: url("../img/equipment/接触网图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.ruwangkou {
+	background: url("../img/equipment/入网口图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.suidao-eq {
+	background: url("../img/equipment/隧道图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tancezhan {
+	background: url("../img/equipment/探测站图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.xinhaoji {
+	background: url("../img/equipment/信号机图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.hy_sbss_ydszthwx {
+	background: url("../img/huoYun/huoyunNFilters/hy_sbss_ydszthwx.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.hy_sbss_ycmzthwx {
+	background: url("../img/huoYun/huoyunNFilters/hy_sbss_ycmzthwx.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.hy_sbss_ydsztzyx {
+	background: url("../img/huoYun/huoyunNFilters/hy_sbss_ydsztzyx.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.hy_sbss_zdhzyjry {
+	background: url("../img/huoYun/huoyunNFilters/hy_sbss_zdhzyjry.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.hy_sbss_yjzzjgcl {
+	background: url("../img/huoYun/huoyunNFilters/hy_sbss_yjzzjgcl.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.hy_sbss_yjzxll {
+	background: url("../img/huoYun/huoyunNFilters/hy_sbss_yjzxll.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.hy_sbss_wjj {
+	background: url("../img/huoYun/huoyunNFilters/hy_sbss_wjj.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.hy_sbss_lwyjqxjx {
+	background: url("../img/huoYun/huoyunNFilters/hy_sbss_lwyjqxjx.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.hy_sbss_wxhyshwl {
+	background: url("../img/huoYun/huoyunNFilters/hy_sbss_wxhyshwl.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 工务 */
+/* 桥梁 */
+.filter-icon.gw_tl_ql {
+	/* background: url("../img/jiWu/电力机图例.png")no-repeat; */
+	/* background-size: 100% 100%; */
+	position: relative;
+}
+
+.filter-icon.gw_tl_ql:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid #4582ff;
+}
+
+/* 隧道 */
+.filter-icon.gw_tl_sd {
+	/* background: url("../img/jiWu/电力机图例.png")no-repeat; */
+	/* background-size: 100% 100%; */
+	position: relative;
+}
+
+.filter-icon.gw_tl_sd:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid #3ddf49;
+}
+
+.filter-icon.gw_tl_pd {
+	/* background: url("../img/jiWu/电力机图例.png")no-repeat; */
+	/* background-size: 100% 100%; */
+	position: relative;
+}
+
+.filter-icon.gw_tl_pd:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid #ff692e;
+}
+
+.filter-icon.gw_tl_pdd {
+	/* background: url("../img/jiWu/电力机图例.png")no-repeat; */
+	/* background-size: 100% 100%; */
+	position: relative;
+}
+
+.filter-icon.gw_tl_pdd:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	border-bottom: 2px solid #ffa017;
+}
+
+.filter-icon.gw_tl_pdd_light {
+	/* background: url("../img/jiWu/电力机图例.png")no-repeat; */
+	/* background-size: 100% 100%; */
+	position: relative;
+}
+
+.filter-icon.gw_tl_pdd_light:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	border-bottom: 2px solid #C87833;
+}
+
+.filter-icon.gw_tl_jk {
+	/* background: url("../img/jiWu/电力机图例.png")no-repeat; */
+	/* background-size: 100% 100%; */
+	position: relative;
+}
+
+.filter-icon.gw_tl_jk:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid #c21919;
+}
+
+.filter-icon.gw_sb_ksd1 {
+	background: url("../img/gongWu/防洪看守点-设备设施.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+/*.filter-icon.gw_sb_ksd1:after {*/
+/*	content: '';*/
+/*	position: absolute;*/
+/*	top: 5px;*/
+/*	left: 0;*/
+/*	width: 100%;*/
+/*	border-bottom: 2px solid #ff2ab8;*/
+/*}*/
+
+.filter-icon.gw_sb_ksd2 {
+	background: url("../img/gongWu/防洪看守点-设备设施.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_sb_ksd2_light {
+	background: url("../img/gongWu/filter_ksd2_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+/*.filter-icon.gw_sb_ksd2:after {*/
+/*	content: '';*/
+/*	position: absolute;*/
+/*	top: 5px;*/
+/*	left: 0;*/
+/*	width: 100%;*/
+/*	border-bottom: 2px solid #7366ff;*/
+/*}*/
+
+.filter-icon.gw_sb_ksd3 {
+	background: url("../img/gongWu/防洪看守点-设备设施.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_sb_slpc {
+	background: url("../img/gongWu/巡查四轮平车.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_sb_llxc {
+	background: url("../img/gongWu/巡查两轮小车.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/*.filter-icon.gw_sb_ksd3:after {*/
+/*	content: '';*/
+/*	position: absolute;*/
+/*	top: 5px;*/
+/*	left: 0;*/
+/*	width: 100%;*/
+/*	border-bottom: 2px solid #FF0000;*/
+/*}*/
+
+.filter-icon.gw_sb_qx {
+	background: url("../img/gongWu/防洪抢险材料及机具-设备设施.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_sb_qx_light {
+	background: url("../img/gongWu/filter_qx_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_sb_zyc {
+	background: url("../img/gongWu/防洪供电抢修作业车-设备设施.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_sb_dk {
+	background: url("../img/gongWu/道口-设备设施.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_sb_dk_light {
+	background: url("../img/gongWu/filter_dk_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_sb_gdc {
+	background: url("../img/gongWu/轨道车-设备设施.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_sb_gdc_light {
+	background: url("../img/gongWu/filter_gdc_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.gw_sb_gdcdw {
+	background: url("../img/gongWu/轨道车定位-图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.dw_dccxsb {
+	background: url("../img/dianWu/dw_dccxsb.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_jh_tc {
+	background: url("../img/gongWu/天窗-设备设施.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_jh_sg {
+	background: url("../img/gongWu/施工计划-设备设施.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_jh_sg_light {
+	background: url("../img/gongWu/sgLight.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_jh_wx {
+	background: url("../img/gongWu/维修计划-设备设施.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_jh_wx_light {
+	background: url("../img/gongWu/wxLight.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_jh_jg {
+	background: url("../img/gongWu/监管计划-设备设施.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_jh_jg_light {
+	background: url("../img/gongWu/jgLight.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_fw_gwd {
+	background: url("../img/gongWu/工务段范围.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_fw_gwd_light {
+	background: url("../img/gongWu/filter_gwd_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_fw_gq {
+	background: url("../img/gongWu/工区范围.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_fw_gq_light {
+	background: url("../img/gongWu/filter_gq_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_fw_cj {
+	background: url("../img/gongWu/车间范围.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gw_fw_cj_light {
+	background: url("../img/gongWu/filter_cj_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+/* 货运 */
+.filter-icon.huoyun-hyz {
+	background: url("../img/huoYun/货运站 图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.huoyun-yjry {
+	background: url("../img/huoYun/站段应急人员 图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.huoyun-yjry-light {
+	background: Url("../img/huoYun/light/filter_yjry.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.huoyun-jjbl {
+	background: url("../img/huoYun/机具备料 图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.huoyun-jjbl-light {
+	background: Url("../img/huoYun/light/filter_jjbl.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.huoyun-yjll {
+	background: url("../img/huoYun/应急劳力 图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.huoyun-yjll-light {
+	background: Url("../img/huoYun/light/filter_yjll.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.huoyun-yjzxjx {
+	background: url("../img/huoYun/应急装卸机械 图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.huoyun-yjzxjx-light {
+	background: Url("../img/huoYun/light/filter_yjzxjx.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.huoyun-shjxzy {
+	background: url("../img/huoYun/社会机械资源 图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.huoyun-shjxzy-light {
+	background: Url("../img/huoYun/light/filter_ssjxzy.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.huoyun-wxhwblz {
+	background: url("../img/huoYun/危险货物办理站 图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.huoyun-wxhwblz-light {
+	background: Url("../img/huoYun/light/filter_wxhwbl.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.huoyun-yfhwblz {
+	background: url("../img/huoYun/易腐货物办理站 图例.png")no-repeat;
+	background-size: 100% 100%;
+}
+.filter-icon.huoyun-yfhwblz-light {
+	background: Url("../img/huoYun/light/filter_yfhwbl.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 警用信息系统 */
+/* 派出所 */
+.filter-icon.tlpcs-light {
+	background: Url("../img/gongAn/pcs/light/tlpcs_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.dfpcs-light {
+	background: Url("../img/gongAn/pcs/light/dfpcs_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.jjing-light {
+	background: Url("../img/gongAn/pcs/light/jjing_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.jjiang-light {
+	background: Url("../img/gongAn/pcs/light/jjiang_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.jzang-light {
+	background: Url("../img/gongAn/pcs/light/jzang_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.kysn-light {
+	background: Url("../img/gongAn/pcs/light/kysn_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.kya-light {
+	background: Url("../img/gongAn/pcs/light/kya_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.kyb-light {
+	background: Url("../img/gongAn/pcs/light/kyb_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.kyc-light {
+	background: Url("../img/gongAn/pcs/light/kyc_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.linea-light {
+	background: Url("../img/gongAn/pcs/light/linea_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.lineb-light {
+	background: Url("../img/gongAn/pcs/light/lineb_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.linec-light {
+	background: Url("../img/gongAn/pcs/light/linec_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 沿线机构 */
+.filter-icon.tlnb-light {
+	background: Url("../img/gongAn/yxjg/light/tlnb_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.town-light {
+	background: Url("../img/gongAn/yxjg/light/town_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.hospital-light {
+	background: Url("../img/gongAn/yxjg/light/hospital_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.school-light {
+	background: Url("../img/gongAn/yxjg/light/school_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.danger-light {
+	background: Url("../img/gongAn/yxjg/light/danger_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.special-light {
+	background: Url("../img/gongAn/yxjg/light/special_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 设备设施 */
+.filter-icon.complex-light {
+	background: Url("../img/gongAn/sb/light/complex_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.bridge-light {
+	/* 后续修改 */
+	background: Url("../img/gongAn/sb/light/bridge_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tunnel-light {
+	background: Url("../img/gongAn/sb/light/tunnel_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.culvert-light {
+	background: Url("../img/gongAn/sb/light/culvert_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.bds-light {
+	background: Url("../img/gongAn/sb/light/bds_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.pds-light {
+	background: Url("../img/gongAn/sb/light/pds_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.at-light {
+	background: Url("../img/gongAn/sb/light/at_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.sxjk-light {
+	background: Url("../img/gongAn/sb/light/sxjk_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.gktq-light {
+	background: Url("../img/gongAn/sb/light/gktq_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.sktq-light {
+	background: Url("../img/gongAn/sb/light/sktq_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.wffz_xs_light {
+	background: Url("../img/gongAn/person/light/wffz_xs_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.wffz_xz_light {
+	background: Url("../img/gongAn/person/light/wffz_xz_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.wffz_net_light {
+	background: Url("../img/gongAn/person/light/wffz_net_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.zdzw_dsc_light {
+	background: Url("../img/gongAn/person/light/zdzw_dsc_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.zdzw_fp_light {
+	background: Url("../img/gongAn/person/light/zdzw_fp_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.zdzw_wc_light {
+	background: Url("../img/gongAn/person/light/zdzw_wc_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.zdzw_wxp_light {
+	background: Url("../img/gongAn/person/light/zdzw_wxp_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.zdzw_other_light {
+	background: Url("../img/gongAn/person/light/zdzw_other_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tlnb_regular_light {
+	background: Url("../img/gongAn/person/light/tlnb_regular_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tlnb_collect_light {
+	background: Url("../img/gongAn/person/light/tlnb_collect_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tlnb_fj_light {
+	background: Url("../img/gongAn/person/light/tlnb_fj_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tlnb_ba_light {
+	background: Url("../img/gongAn/person/light/tlnb_ba_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tlnb_aj_light {
+	background: Url("../img/gongAn/person/light/tlnb_aj_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tlnb_bj_light {
+	background: Url("../img/gongAn/person/light/tlnb_bj_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tlnb_xfdy_light {
+	background: Url("../img/gongAn/person/light/tlnb_xfdy_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tlnb_gcsg_light {
+	background: Url("../img/gongAn/person/light/tlnb_gcsg_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tlnb_zxby_light {
+	background: Url("../img/gongAn/person/light/tlnb_zxby_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tlnb_shyy_light {
+	background: Url("../img/gongAn/person/light/tlnb_shyy_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.tlnb_others_light {
+	background: Url("../img/gongAn/person/light/tlnb_others_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.aj_xzjy_light {
+	background: Url("../img/gongAn/shi/light/aj_xzjy_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.aj_xzyb_light {
+	background: Url("../img/gongAn/shi/light/aj_xzyb_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.aj_xs_light {
+	background: Url("../img/gongAn/shi/light/aj_xs_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.aj_wx_light {
+	background: Url("../img/gongAn/shi/light/aj_wx_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.aj_other_light {
+	background: Url("../img/gongAn/shi/light/aj_other_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.sj_qt_light {
+	background: Url("../img/gongAn/shi/light/sj_qt_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.sj_tljt_light {
+	background: Url("../img/gongAn/shi/light/sj_tljt_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.sj_fire_light {
+	background: Url("../img/gongAn/shi/light/sj_fire_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.sj_zdzr_light {
+	background: Url("../img/gongAn/shi/light/sj_zdzr_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.sj_other_light {
+	background: Url("../img/gongAn/shi/light/sj_other_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.yh_za_light {
+	background: Url("../img/gongAn/shi/light/yh_za_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.yh_nb_light {
+	background: Url("../img/gongAn/shi/light/yh_nb_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.yh_xf_light {
+	background: Url("../img/gongAn/shi/light/yh_xf_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+.filter-icon.yh_fk_light {
+	background: Url("../img/gongAn/shi/light/yh_fk_light.png")no-repeat;
+	background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+/* 晚点链接 */
+.late-train-link {
+	display: block;
+	width: 60px;
+	line-height: 20px;
+	cursor: pointer;
+	margin: 10px 0;
+	border-bottom: 1px solid white;
+}
+
+.late-train-link:hover {
+	color: #66b1ff;
+	border-color: #66b1ff;
+}
+
+.filter-late {
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	vertical-align: middle;
+	margin: 0 8px;
+	border-radius: 4px;
+}
+
+.filter-late.wd1 {
+	background-color: #DECA17;
+	box-shadow: 0px 0px 3px 2px #DECA17;
+}
+
+.filter-late.wd2 {
+	background-color: #8E4C2C;
+	box-shadow: 0px 0px 3px 2px #8E4C2C;
+}
+
+.filter-late.wd3 {
+	background-color: #8B1F2B;
+	box-shadow: 0px 0px 3px 2px #8B1F2B;
+}
+
+.filter-late.wd4 {
+	background-color: #47111F;
+	box-shadow: 0px 0px 3px 2px #47111F;
+}
+
+/* 全局搜索车次面板样式 */
+.blue-popper {
+	background: #2C324C;
+	border-color: #5D6375;
+}
+
+.blue-popper li {
+	color: #fafafa !important;
+}
+
+.blue-popper li:hover {
+	background: #656b7f;
+}
+
+.blue-popper.el-popper[x-placement^=bottom] .popper__arrow {
+	border-bottom-color: #5D6375;
+}
+
+.blue-popper.el-popper[x-placement^=bottom] .popper__arrow::after {
+	border-bottom-color: #2C324C;
+}
+
+/* 公安全局搜索车次面板样式 */
+.blue-gapopper {
+	background: #2C324C;
+	border-color: #5D6375;
+	width: auto!important;
+}
+
+.blue-gapopper li {
+	color: #fafafa !important;
+}
+
+.blue-gapopper li:hover {
+	background: #656b7f;
+}
+
+.blue-gapopper.el-popper[x-placement^=bottom] .popper__arrow {
+	border-bottom-color: #5D6375;
+}
+
+.blue-gapopper.el-popper[x-placement^=bottom] .popper__arrow::after {
+	border-bottom-color: #2C324C;
+}
+
+.white-gapopper {
+	background: #f5f4f3;
+	border-color: #5D6375;
+	width: auto!important;
+}
+
+.white-gapopper li {
+	color: #000 !important;
+}
+
+.white-gapopper li:hover {
+	background: #656b7f;
+}
+
+.white-gapopper.el-popper[x-placement^=bottom] .popper__arrow {
+	border-bottom-color: #5D6375;
+}
+
+.white-gapopper.el-popper[x-placement^=bottom] .popper__arrow::after {
+	border-bottom-color: #2C324C;
+}
+
+/* 地图测距样式 */
+#rangingDistanseResult {
+	position: fixed;
+	top: -100px;
+	left: -100px;
+	z-index: 420;
+	padding: 3px 5px;
+	color: white;
+	color: #aaffff;
+	border: 1px solid red;
+}
+
+#rangingDistanseResult>div {
+	color: #d9d9d9;
+	font-size: 12px;
+}
+
+.ranging-remove-container {
+	margin-top: -8px !important;
+	margin-left: -20px !important;
+}
+
+.ranging-remove {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 10px;
+	font-weight: bold;
+	color: red;
+	background: white;
+	border: 1px solid red;
+}
+
+.ranging-box {
+	white-space: nowrap;
+}
+
+.ranging-box>i {
+	display: inline-block;
+	vertical-align: top;
+	background: white;
+	width: 10px;
+	height: 10px;
+	border-radius: 6px;
+	border: 2px solid red;
+}
+
+.ranging-box>span {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0px 3px;
+	margin-left: 3px;
+	margin-top: -5px;
+	white-space: nowrap;
+	font-size: 12px;
+	border-radius: 3px;
+	border: 1px solid #a5a1cc;
+}
+
+/* 右侧信息窗口样式 */
+.right-info-win{
+	position: absolute;
+	top:80px;
+	right:0px;
+	bottom: 10px;
+	width: 600px;
+	z-index: 500;
+	background: #000066;
+	display: none;
+}
+.right-info-win.visible{
+	display: block;
+}
+.right-info-win>.close{
+	position: absolute;
+	top: 0px;
+	height: 24px;
+	font-size: 22px;
+	opacity: .8;
+	color: red;
+	font-weight: bold;
+}
+.right-info-win>.close:hover{
+	cursor: pointer;
+	opacity: 1;
+}
+.right-info-win>.main{
+	width: 100%;
+	height: 100%;
+}

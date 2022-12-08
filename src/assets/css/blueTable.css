@@ -1,0 +1,51 @@
+.blue-table ::-webkit-scrollbar {
+	width: 2px;
+	background-color: transparent;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* 表格背景 */
+.blue-table .el-table {
+	color: #fff;
+	background-color: #293066;
+}
+
+/* 表头文本颜色 */
+.blue-table .el-table thead {
+	color: #fff;
+}
+
+/* 行背景 */
+.blue-table .el-table .el-table__header>thead>tr,
+.blue-table .el-table .el-table__header>thead>tr>th,
+.blue-table .el-table .el-table__header>thead>tr:hover,
+.blue-table .el-table .el-table__body>tbody>tr,
+.blue-table .el-table .el-table__body>tbody>tr>th {
+	background-color: transparent;
+}
+
+/* 单元格边框 */
+.blue-table .el-table td,
+.blue-table .el-table th.is-leaf {
+	border-bottom: none;
+}
+
+/* 表格行鼠标移动背景色 */
+.blue-table .el-table--enable-row-hover .el-table__body tr:hover>td {
+	cursor: pointer;
+	background-color: #293066;
+}
+
+/* 斑马纹 */
+/* 表格行鼠标移动背景色 */
+.blue-table .el-table--striped .el-table__body tr.el-table__row--striped:hover,
+.blue-table .el-table--striped .el-table__body tr.el-table__row--striped td {
+	background-color: rgba(32, 38, 86, .9);
+}
+
+/* 表格底部边框 */
+.blue-table .el-table--border::after,
+.blue-table .el-table--group::after,
+.blue-table .el-table::before {
+	background-color: transparent;
+}

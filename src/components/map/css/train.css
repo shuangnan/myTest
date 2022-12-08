@@ -1,0 +1,293 @@
+/* 列车 */
+.train-icon-container{
+	z-index: 100!important;
+}
+.train-icon-container.hiden{
+	display: none;
+}
+.train-icon-container-dzc{
+	z-index: 100!important;
+}
+.train-icon-container-dzc.hiden{
+	display: none;
+}
+.marker-tarin {
+	margin-top: -15px;
+	margin-left: 6px;
+	width: 75px;
+	height: 22px;
+}
+.marker-tarin.kyd{
+	width: 90px;
+	height: 25px;
+}
+/* 客运段单独样式 */
+.marker-tarin.min {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: #A6ABE2;
+	font-size: 12px;
+	border-radius: 50%;
+	text-align: center;
+	margin-top: -0px;
+	margin-left: -1px;
+}
+
+.marker-tarin .pic {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.marker-tarin.DC .pic {
+	background: url("../img/train/普通动车.png");
+	background-size: 100% 100%;
+}
+
+/*到站车大图标*/
+.marker-tarin.DZC .pic {
+	background: url("../img/train/到站车2.png");
+	background-size: 100% 100%;
+}
+
+.marker-tarin.DQ .pic {
+	background: url("../img/train/桥动车.png");
+	background-size: 100% 100%;
+}
+
+.marker-tarin.DS .pic {
+	background: url("../img/train/隧道动车.png");
+	background-size: 100% 100%;
+}
+
+.marker-tarin.PC .pic {
+	background: url("../img/train/普车.png");
+	background-size: 100% 100%;
+}
+
+.marker-tarin.PQ .pic {
+	background: url("../img/train/桥普车.png");
+	background-size: 100% 100%;
+}
+
+.marker-tarin.PS .pic {
+	background: url("../img/train/隧道普车.png");
+	background-size: 100% 100%;
+}
+
+.marker-tarin.HC .pic {
+	background: url("../img/train/隧道普车.png");
+	background-size: 100% 100%
+}
+
+.marker-tarin.min.DC,
+.marker-tarin.min.PC {
+	background: #A6ABE2;
+}
+
+/*到站车小图标*/
+.marker-tarin.min.DZC {
+	background: #87BB34;
+}
+
+.marker-tarin.min.DQ,
+.marker-tarin.min.PQ {
+	background: #DAAD3C;
+}
+
+.marker-tarin.min.DS,
+.marker-tarin.min.PS {
+	background: #9A52EA;
+}
+
+.marker-tarin.min.HC {
+	background: #FD5A5A
+}
+
+/* 圆点车下隐藏图片和车次 */
+.marker-tarin.min .pic,
+.marker-tarin.min .num {
+	display: none;
+}
+
+.marker-tarin .num {
+	position: absolute;
+	display: inline-block;
+	left: 3px;
+	padding-left: 3px;
+	right: 0px;
+	top: 0px;
+	background: transparent;
+	color: white;
+}
+/* 客运段单独样式 */
+.marker-tarin.kyd .num {
+	top: 1px;
+}
+
+.marker-tarin .count {
+	color: #5E68D4;
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	top: -3px;
+	width: 14px;
+	height: 14px;
+	text-align: center;
+	line-height: 12px;
+	font-size: 12px;
+	border: 1px solid #5E68D4;
+	background: rgba(230,230,230,.5);
+	border-radius: 50%;
+	/* display: none; */
+}
+/* 客运段单独样式 */
+.marker-tarin.kyd .count {
+	right: 5px;
+}
+
+.marker-tarin.single-train .count,
+.marker-tarin .count:empty{
+	display: none;
+}
+
+/* 晚点列车 */
+.marker-tarin .cover {
+	position: absolute;
+	display: inline-block;
+	left: 5px;
+	padding-left: 5px;
+	right: 10px;
+	top: 1px;
+	bottom: 9px;
+	color: white;
+	background: transparent;
+	animation: trainLateAnimate 1.5s;
+	animation-iteration-count: infinite;
+}
+
+.marker-tarin.min .cover {
+	left: 0px;
+	padding-left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	border-radius: 6px;
+}
+
+/* 普通 A6ABE2 桥 DAAD3C 隧道 9A52EA */
+.wd-train.wd1 .cover {
+	box-shadow: 0 0 20px #DECA17;
+}
+
+.wd-train.wd2 .cover {
+	box-shadow: 0 0 20px #8E4C2C;
+}
+
+.wd-train.wd3 .cover {
+	box-shadow: 0 0 20px #8B1F2B;
+}
+
+.wd-train.wd4 .cover {
+	box-shadow: 0 0 20px #47111F;
+}
+
+/* 晚点车发光效果 */
+@keyframes trainLateAnimate {
+	from {
+		opacity: 0.3;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0.3;
+	}
+}
+
+
+/* 筛选得到的车次样式 */
+.filtered .pic {
+	animation: filteredAnimate 1.5s;
+	/* animation-iteration-count: infinite; */
+	animation-iteration-count: 3;
+}
+
+.ctrl-select {
+	border: 1px solid sandybrown;
+}
+
+.kuang-xuang {
+	animation: filteredAnimate 1.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes filteredAnimate {
+	from {
+		display: 0.4;
+	}
+
+	50% {
+		opacity: 1;
+		transform: scale(1.5);
+	}
+
+	to {
+		opacity: 0.4;
+	}
+}
+
+/* 管界内列车 */
+.in-bound{
+	/* animation: filteredAnimate 1.5s;
+	animation-iteration-count: infinite; */
+}
+
+/* 地震区列车 */
+.quake1,/*封锁*/
+.quake2,/*检查*/
+.quake3{/*限速*/
+	animation: quakeTrainAnimate 1.5s;
+	animation-iteration-count: 10;
+}
+.quake1{
+	box-shadow: 0 0 20px #df990c;
+}
+.quake2{
+	box-shadow: 0 0 20px #ff0000;
+}
+.quake3{
+	box-shadow: 0 0 20px #55aaff;
+}
+@keyframes quakeTrainAnimate {
+	from {
+		display: 0.4;
+	}
+
+	50% {
+		opacity: 1;
+		transform: scale(1.5);
+	}
+
+	to {
+		opacity: 0.4;
+	}
+}
+
+/* 车体交路 */
+.traininfo-cdjl {
+	position: absolute;
+	right: 15px;
+	top: 25px;
+	padding-left: 20px;
+	background: url(../img/train/车体交路图标.png)no-repeat;
+	background-position: 0 0px;
+	z-index: 100;
+}
+.traininfo-cdjl:hover{
+	color: #3D99FF;
+	cursor: pointer;
+}
